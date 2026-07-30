@@ -5,6 +5,8 @@
   let mapMarkers = [];
   let searchResults = null;
   let allLocations = [];
+  let addCourtMap = null;
+  let addCourtMarker = null;
   let allCourtsData = [];
 
   const elements = {
@@ -108,9 +110,15 @@
   function setupModals() {
     function openAddModal() {
       elements.addCourtModal.style.display = 'flex';
+      setTimeout(initAddCourtMap, 200);
     }
     function closeAddModal() {
       elements.addCourtModal.style.display = 'none';
+      if (addCourtMap) {
+        addCourtMap.remove();
+        addCourtMap = null;
+        addCourtMarker = null;
+      }
     }
     function openCourtModal() { /* populated dynamically */ }
 
@@ -540,6 +548,35 @@
         });
       });
     }
+  }
+
+  function initAddCourtMap() {
+    var container = document.getElementById('addCourtMap');
+    if (!container || addCourtMap) return;
+
+    addCourtMap = L.map('addCourtMap', { zoomControl: true }).setView([3.8, 109.5], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(addCourtMap);
+
+    setTimeout(function () { addCourtMap.invalidateSize(); }, 300);
+
+    var latInput = document.getElementById('courtLat');
+    var lngInput = document.getElementById('courtLng');
+    var latDisplay = document.getElementById('pinLatDisplay');
+    var lngDisplay = document.getElementById('pinLngDisplay');
+
+    addCourtMap.on('click', function (e) {
+      var lat = e.latlng.lat.toFixed(6);
+      var lng = e.latlng.lng.toFixed(6);
+      if (latInput) latInput.value = lat;
+      if (lngInput) lngInput.value = lng;
+      if (latDisplay) latDisplay.textContent = lat;
+      if (lngDisplay) lngDisplay.textContent = lng;
+
+      if (addCourtMarker) addCourtMap.removeLayer(addCourtMarker);
+      addCourtMarker = L.marker([lat, lng]).addTo(addCourtMap);
+    });
   }
 
   function showToast(msg) {
