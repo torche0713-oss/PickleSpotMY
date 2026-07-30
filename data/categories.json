@@ -1,0 +1,5 @@
+[
+  { "id": "indoor", "name": "Indoor", "slug": "indoor", "icon": "🏠" },
+  { "id": "outdoor", "name": "Outdoor", "slug": "outdoor", "icon": "🌳" },
+  { "id": "both", "name": "Indoor & Outdoor", "slug": "both", "icon": "🏟️" }
+]

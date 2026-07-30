@@ -1,0 +1,747 @@
+[
+  {
+    "id": "bounce-and-rally-elevate-social-club",
+    "name": "Bounce And Rally @ Elevate Social Club",
+    "slug": "bounce-and-rally-elevate-social-club",
+    "description": "Pickleball courts at Elevate Social Club in Cyberjaya. Features changing rooms, free parking, and shower facilities.",
+    "category": "indoor",
+    "location": {
+      "address": "Elevate Social Club, Cyberjaya",
+      "city": "Cyberjaya",
+      "state": "Selangor",
+      "lat": 2.9222,
+      "lng": 101.6509
+    },
+    "contact": {
+      "website": "https://picklepadel.my/en/venues/0Ht7vNkXeijU4zSxOd7o"
+    },
+    "amenities": ["Changing Room", "Free Parking", "Shower"],
+    "courts": 4,
+    "price_range": "RM25-35/hour",
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues/0Ht7vNkXeijU4zSxOd7o",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-social-club-shah-alam",
+    "name": "Pickleball Social Club @ Shah Alam",
+    "slug": "pickleball-social-club-shah-alam",
+    "description": "Social pickleball club in Shah Alam with multiple courts.",
+    "category": "indoor",
+    "location": {
+      "city": "Shah Alam",
+      "state": "Selangor"
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickle-park-tropicana-gardens-mall",
+    "name": "Pickle Park @ Tropicana Gardens Mall",
+    "slug": "pickle-park-tropicana-gardens-mall",
+    "description": "Pickleball courts at Tropicana Gardens Mall, Kota Damansara.",
+    "category": "indoor",
+    "location": {
+      "address": "Tropicana Gardens Mall, Kota Damansara",
+      "city": "Petaling Jaya",
+      "state": "Selangor",
+      "lat": 3.1555,
+      "lng": 101.5802
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning", "Free Parking"],
+    "courts": 4,
+    "price_range": "RM30-40/hour",
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-senawang",
+    "name": "Pickleball Senawang",
+    "slug": "pickleball-senawang",
+    "description": "Pickleball courts in Senawang, Negeri Sembilan.",
+    "category": "outdoor",
+    "location": {
+      "city": "Senawang",
+      "state": "Negeri Sembilan"
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-gamuda-walk",
+    "name": "Pickleball @ Gamuda Walk",
+    "slug": "pickleball-gamuda-walk",
+    "description": "Pickleball courts at Gamuda Walk, Kota Kemuning.",
+    "category": "outdoor",
+    "location": {
+      "address": "Gamuda Walk, Kota Kemuning",
+      "city": "Shah Alam",
+      "state": "Selangor",
+      "lat": 2.9999,
+      "lng": 101.5428
+    },
+    "contact": {},
+    "amenities": ["Free Parking", "F&B Nearby"],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-meru",
+    "name": "Pickleball Meru",
+    "slug": "pickleball-meru",
+    "description": "Pickleball courts in Meru, Selangor.",
+    "category": "outdoor",
+    "location": {
+      "city": "Meru",
+      "state": "Selangor"
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "ksl-pickleball",
+    "name": "KSL Pickleball",
+    "slug": "ksl-pickleball",
+    "description": "Pickleball courts at KSL, Johor Bahru.",
+    "category": "indoor",
+    "location": {
+      "address": "KSL City Mall",
+      "city": "Johor Bahru",
+      "state": "Johor",
+      "lat": 1.4832,
+      "lng": 103.7382
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning", "Free Parking"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-bangsar",
+    "name": "Pickleball & More @ Bangsar",
+    "slug": "pickleball-bangsar",
+    "description": "Pickleball courts in Bangsar, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Bangsar",
+      "state": "Kuala Lumpur",
+      "lat": 3.1298,
+      "lng": 101.6715
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickle-chill-sunway-velocity",
+    "name": "Pickle & Chill @ Sunway Velocity",
+    "slug": "pickle-chill-sunway-velocity",
+    "description": "Pickleball courts at Sunway Velocity, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "Sunway Velocity",
+      "city": "Kuala Lumpur",
+      "state": "Kuala Lumpur",
+      "lat": 3.1841,
+      "lng": 101.7147
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning", "F&B"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-puchong",
+    "name": "Pickleball @ Puchong",
+    "slug": "pickleball-puchong",
+    "description": "Pickleball courts in Puchong, Selangor.",
+    "category": "indoor",
+    "location": {
+      "city": "Puchong",
+      "state": "Selangor",
+      "lat": 3.0019,
+      "lng": 101.6127
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-mutiara-damansara",
+    "name": "Pickleball @ Mutiara Damansara",
+    "slug": "pickleball-mutiara-damansara",
+    "description": "Pickleball courts in Mutiara Damansara, Selangor.",
+    "category": "indoor",
+    "location": {
+      "city": "Mutiara Damansara",
+      "state": "Selangor",
+      "lat": 3.1367,
+      "lng": 101.6033
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning", "Free Parking"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-setia-alam",
+    "name": "Pickleball @ Setia Alam",
+    "slug": "pickleball-setia-alam",
+    "description": "Pickleball courts in Setia Alam, Selangor.",
+    "category": "outdoor",
+    "location": {
+      "city": "Setia Alam",
+      "state": "Selangor",
+      "lat": 3.1019,
+      "lng": 101.4428
+    },
+    "contact": {},
+    "amenities": ["Free Parking"],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pj-pickleball",
+    "name": "PJ Pickleball",
+    "slug": "pj-pickleball",
+    "description": "Pickleball courts in Petaling Jaya, Selangor.",
+    "category": "indoor",
+    "location": {
+      "city": "Petaling Jaya",
+      "state": "Selangor",
+      "lat": 3.1075,
+      "lng": 101.6061
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-bukit-jalil",
+    "name": "Pickleball @ Bukit Jalil",
+    "slug": "pickleball-bukit-jalil",
+    "description": "Pickleball courts in Bukit Jalil, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Bukit Jalil",
+      "state": "Kuala Lumpur",
+      "lat": 3.0546,
+      "lng": 101.6914
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "ace-pickleball",
+    "name": "The ACE Pickleball",
+    "slug": "ace-pickleball",
+    "description": "Pickleball venue with multiple locations across Klang Valley.",
+    "category": "indoor",
+    "location": {
+      "city": "Kuala Lumpur",
+      "state": "Kuala Lumpur"
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning", "Equipment Rental"],
+    "courts": 4,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-kepong",
+    "name": "Pickleball @ Kepong",
+    "slug": "pickleball-kepong",
+    "description": "Pickleball courts in Kepong, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Kepong",
+      "state": "Kuala Lumpur",
+      "lat": 3.2111,
+      "lng": 101.6438
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-subang",
+    "name": "Pickleball @ Subang",
+    "slug": "pickleball-subang",
+    "description": "Pickleball courts in Subang, Selangor.",
+    "category": "indoor",
+    "location": {
+      "city": "Subang",
+      "state": "Selangor",
+      "lat": 3.1556,
+      "lng": 101.5821
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-cheras",
+    "name": "Pickleball @ Cheras",
+    "slug": "pickleball-cheras",
+    "description": "Pickleball courts in Cheras, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Cheras",
+      "state": "Kuala Lumpur",
+      "lat": 3.1024,
+      "lng": 101.7352
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-kota-damansara",
+    "name": "Pickleball @ Kota Damansara",
+    "slug": "pickleball-kota-damansara",
+    "description": "Pickleball courts in Kota Damansara, Selangor.",
+    "category": "indoor",
+    "location": {
+      "city": "Kota Damansara",
+      "state": "Selangor",
+      "lat": 3.1587,
+      "lng": 101.5822
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-sri-petaling",
+    "name": "Pickleball @ Sri Petaling",
+    "slug": "pickleball-sri-petaling",
+    "description": "Pickleball courts in Sri Petaling, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Sri Petaling",
+      "state": "Kuala Lumpur",
+      "lat": 3.0644,
+      "lng": 101.6886
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-ampang",
+    "name": "Pickleball @ Ampang",
+    "slug": "pickleball-ampang",
+    "description": "Pickleball courts in Ampang, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Ampang",
+      "state": "Kuala Lumpur",
+      "lat": 3.1514,
+      "lng": 101.7603
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-wangsa-maju",
+    "name": "Pickleball @ Wangsa Maju",
+    "slug": "pickleball-wangsa-maju",
+    "description": "Pickleball courts in Wangsa Maju, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Wangsa Maju",
+      "state": "Kuala Lumpur",
+      "lat": 3.1992,
+      "lng": 101.7392
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-sibu",
+    "name": "Pickleball Sibu",
+    "slug": "pickleball-sibu",
+    "description": "Pickleball courts in Sibu, Sarawak.",
+    "category": "indoor",
+    "location": {
+      "city": "Sibu",
+      "state": "Sarawak",
+      "lat": 2.2875,
+      "lng": 111.8250
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-kuching",
+    "name": "Pickleball @ Kuching",
+    "slug": "pickleball-kuching",
+    "description": "Pickleball courts in Kuching, Sarawak.",
+    "category": "indoor",
+    "location": {
+      "city": "Kuching",
+      "state": "Sarawak",
+      "lat": 1.5533,
+      "lng": 110.3593
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-miri",
+    "name": "Pickleball Miri",
+    "slug": "pickleball-miri",
+    "description": "Pickleball courts in Miri, Sarawak.",
+    "category": "indoor",
+    "location": {
+      "city": "Miri",
+      "state": "Sarawak",
+      "lat": 4.3995,
+      "lng": 113.9914
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-labuan",
+    "name": "Pickleball Labuan",
+    "slug": "pickleball-labuan",
+    "description": "Pickleball courts in Labuan, Federal Territory.",
+    "category": "indoor",
+    "location": {
+      "city": "Labuan",
+      "state": "Labuan",
+      "lat": 5.2831,
+      "lng": 115.2448
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-bintulu",
+    "name": "Pickleball Bintulu",
+    "slug": "pickleball-bintulu",
+    "description": "Pickleball courts in Bintulu, Sarawak.",
+    "category": "indoor",
+    "location": {
+      "city": "Bintulu",
+      "state": "Sarawak",
+      "lat": 3.1713,
+      "lng": 113.0456
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "cross-court-batu-pahat",
+    "name": "Cross Court Batu Pahat",
+    "slug": "cross-court-batu-pahat",
+    "description": "Cross Court pickleball venue in Batu Pahat, Johor.",
+    "category": "indoor",
+    "location": {
+      "city": "Batu Pahat",
+      "state": "Johor",
+      "lat": 1.8548,
+      "lng": 102.9330
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "cross-court-muar",
+    "name": "Cross Court Muar",
+    "slug": "cross-court-muar",
+    "description": "Cross Court pickleball venue in Muar, Johor.",
+    "category": "indoor",
+    "location": {
+      "city": "Muar",
+      "state": "Johor",
+      "lat": 2.0452,
+      "lng": 102.5686
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "cross-court-melaka",
+    "name": "Cross Court Melaka",
+    "slug": "cross-court-melaka",
+    "description": "Cross Court pickleball venue in Melaka.",
+    "category": "indoor",
+    "location": {
+      "city": "Melaka",
+      "state": "Melaka",
+      "lat": 2.1950,
+      "lng": 102.2473
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "cross-court-jb",
+    "name": "Cross Court JB",
+    "slug": "cross-court-jb",
+    "description": "Cross Court pickleball venue in Johor Bahru.",
+    "category": "indoor",
+    "location": {
+      "city": "Johor Bahru",
+      "state": "Johor",
+      "lat": 1.4917,
+      "lng": 103.7424
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickle-project-bangsar",
+    "name": "The Pickle Project @ Bangsar",
+    "slug": "pickle-project-bangsar",
+    "description": "Pickleball venue in Bangsar, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Bangsar",
+      "state": "Kuala Lumpur",
+      "lat": 3.1298,
+      "lng": 101.6715
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning", "Equipment Rental"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickle-project-bukit-jalil",
+    "name": "The Pickle Project @ Bukit Jalil",
+    "slug": "pickle-project-bukit-jalil",
+    "description": "Pickleball venue in Bukit Jalil, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Bukit Jalil",
+      "state": "Kuala Lumpur",
+      "lat": 3.0546,
+      "lng": 101.6914
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning", "Equipment Rental"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "picklr-bangsar",
+    "name": "PICKLR @ Bangsar",
+    "slug": "picklr-bangsar",
+    "description": "Pickleball venue in Bangsar, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Bangsar",
+      "state": "Kuala Lumpur",
+      "lat": 3.1298,
+      "lng": 101.6715
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "picklr-sunway-velocity",
+    "name": "PICKLR @ Sunway Velocity",
+    "slug": "picklr-sunway-velocity",
+    "description": "Pickleball venue at Sunway Velocity, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "Sunway Velocity",
+      "city": "Kuala Lumpur",
+      "state": "Kuala Lumpur",
+      "lat": 3.1841,
+      "lng": 101.7147
+    },
+    "contact": {},
+    "amenities": ["Air Conditioning", "F&B"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-ground-sri-petaling",
+    "name": "Pickleball Ground @ Sri Petaling",
+    "slug": "pickleball-ground-sri-petaling",
+    "description": "Pickleball venue in Sri Petaling, Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Sri Petaling",
+      "state": "Kuala Lumpur",
+      "lat": 3.0644,
+      "lng": 101.6886
+    },
+    "contact": {},
+    "amenities": [],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickle-pro-kl",
+    "name": "Pickle Pro KL",
+    "slug": "pickle-pro-kl",
+    "description": "Professional pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "city": "Kuala Lumpur",
+      "state": "Kuala Lumpur"
+    },
+    "contact": {},
+    "amenities": ["Equipment Rental", "Coaching"],
+    "courts": 3,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "pickle-crunch-seapark",
+    "name": "Pickle & Crunch @ Seapark",
+    "slug": "pickle-crunch-seapark",
+    "description": "Pickleball venue in Seapark, Selangor.",
+    "category": "indoor",
+    "location": {
+      "city": "Seapark",
+      "state": "Selangor",
+      "lat": 3.1064,
+      "lng": 101.6281
+    },
+    "contact": {},
+    "amenities": ["F&B"],
+    "courts": 2,
+    "source": "picklepadel.my",
+    "source_url": "https://picklepadel.my/en/venues",
+    "status": "active"
+  },
+  {
+    "id": "skyline-racket-club",
+    "name": "Skyline Racket Club",
+    "slug": "skyline-racket-club",
+    "description": "Premium racket sports club with pickleball courts. Book online via CourtOS.",
+    "category": "indoor",
+    "location": {
+      "address": "Skyline Racket Club",
+      "city": "Kuala Lumpur",
+      "state": "Kuala Lumpur"
+    },
+    "contact": {
+      "website": "https://courtos.momentist.com.my/"
+    },
+    "amenities": ["Air Conditioning", "Equipment Rental", "Pro Shop", "F&B"],
+    "courts": 4,
+    "booking_links": [
+      { "platform": "CourtOS", "url": "https://courtos.momentist.com.my/" }
+    ],
+    "source": "courtos.momentist.com.my",
+    "source_url": "https://courtos.momentist.com.my/",
+    "status": "active"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "picklespotmy",
+  "version": "1.0.0",
+  "description": "Malaysia Pickleball Court Directory",
+  "main": "index.html",
+  "scripts": {
+    "scrape:courts": "node scripts/scrape-pickleballcourts.js",
+    "scrape:picklepadel": "node scripts/scrape-picklepadel.js",
+    "scrape:all": "npm run scrape:courts && npm run scrape:picklepadel",
+    "import": "node scripts/import-to-firestore.js",
+    "dev": "serve -l 3000 -s .",
+    "start": "serve -l 3000 -s .",
+    "lint": "echo 'no linter configured'",
+    "test:api": "node -e \"const m=require('./api/courts.js');m({method:'GET'},{status:s=>({json:d=>console.log('API OK:',d.length,'courts'),end:()=>{}}),setHeader:()=>{}})\""
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "firebase-admin": "^13.0.0",
+    "playwright": "^1.52.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}
