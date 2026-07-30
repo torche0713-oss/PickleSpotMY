@@ -95,9 +95,55 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .leaflet-popup-content h3 { font-size: 0.95rem; margin-bottom: 4px; }
 .leaflet-popup-content p { font-size: 0.8rem; color: var(--gray-500); margin: 0; }
 
-@media (max-width: 768px) {
-  .hero h1 { font-size: 1.5rem; }
-  .search-row { grid-template-columns: 1fr; }
-  .nav { gap: 12px; }
+@media (max-width: 900px) {
+  .search-row { grid-template-columns: 1fr 1fr; }
+  .field-btn { grid-column: 1 / -1; }
+  .field-btn button { width: 100%; }
+}
+
+@media (max-width: 600px) {
+  .header-inner { height: 52px; }
+  .logo { font-size: 1.05rem; }
+  .logo-icon { font-size: 1.2rem; }
+  .nav { gap: 16px; }
   .nav a { font-size: 0.8rem; }
+
+  .hero { padding: 32px 0 28px; }
+  .hero h1 { font-size: 1.35rem; }
+  .hero p { font-size: .875rem; }
+
+  .search-section { padding: 16px 0; }
+  .search-row { grid-template-columns: 1fr; gap: 8px; }
+  .field label { font-size: .7rem; }
+  .field input, .field select { padding: 10px; font-size: 16px; }
+  .field-btn button { padding: 12px 20px; font-size: 1rem; }
+  .search-status { font-size: .8rem; }
+
+  .results-section { padding: 16px 0 32px; }
+  .results-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .results-header h2 { font-size: 1.1rem; }
+  .results-map { height: 200px; margin-bottom: 16px; border-radius: var(--radius); }
+
+  .venue-header { padding: 12px 14px; }
+  .venue-header h3 { font-size: .9rem; }
+  .venue-header .venue-meta { font-size: .75rem; }
+  .venue-status-badge { font-size: .7rem; padding: 3px 8px; }
+  .venue-group.expanded .venue-courts { padding: 8px 14px; }
+
+  .session-card { flex-direction: column; align-items: flex-start; gap: 6px; padding: 10px 0; }
+  .session-time { font-size: .85rem; }
+  .session-price { font-size: .8rem; }
+  .session-book { padding: 8px 16px; font-size: .85rem; }
+
+  .loading-state { padding: 32px; }
+  .no-results, .initial-msg { padding: 32px; }
+  .footer { font-size: .75rem; padding: 16px 0; }
+  .container { padding: 0 12px; }
+}
+
+@media (max-width: 400px) {
+  .hero h1 { font-size: 1.15rem; }
+  .hero { padding: 24px 0 20px; }
+  .venue-header { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .venue-header::after { display: none; }
 }
