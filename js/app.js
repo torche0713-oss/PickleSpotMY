@@ -32,6 +32,7 @@
     elements.stateInput.addEventListener('change', onStateChange);
     elements.cityInput.addEventListener('change', onCityChange);
     loadLocations();
+    loadDirectory();
   }
 
   async function loadLocations() {
@@ -264,6 +265,52 @@
     });
 
     if (bounds.length > 0) map.fitBounds(bounds, { padding: [50, 50] });
+  }
+
+  async function loadDirectory() {
+    try {
+      const res = await fetch('/api/directory?limit=398');
+      const data = await res.json();
+      const container = document.getElementById('directory-list');
+      const countEl = document.getElementById('directory-count');
+      if (!container) return;
+
+      countEl.textContent = `${data.total} venues`;
+
+      const sortedStates = (data.states || []).sort((a, b) => b.count - a.count);
+
+      container.innerHTML = sortedStates.map(s => `
+        <div class="dir-state-group">
+          <div class="dir-state-header" onclick="this.closest('.dir-state-group').classList.toggle('dir-open')">
+            <span class="dir-state-name">${s.name}</span>
+            <span class="dir-state-count">${s.count} venues</span>
+            <span class="dir-arrow">▸</span>
+          </div>
+          <div class="dir-state-venues" id="dir-${s.name.replace(/\s+/g, '-')}">
+            <div style="padding:12px;text-align:center;color:var(--gray-500);font-size:0.85rem;">Loading...</div>
+          </div>
+        </div>
+      `).join('');
+
+      // Load venues per state
+      data.states.forEach(s => {
+        fetch(`/api/directory?state=${encodeURIComponent(s.name)}&limit=200`)
+          .then(r => r.json())
+          .then(d => {
+            const el = document.getElementById(`dir-${s.name.replace(/\s+/g, '-')}`);
+            if (!el) return;
+            el.innerHTML = d.venues.map(v => `
+              <a href="https://picklepadel.my/en/venues/${v.slug}" target="_blank" class="dir-venue-item" rel="noopener">
+                <span class="dir-venue-name">${v.name}</span>
+                <span class="dir-venue-city">${v.city || ''} ${v.courts ? '· ' + v.courts + ' courts' : ''}</span>
+              </a>
+            `).join('');
+          })
+          .catch(() => {});
+      });
+    } catch (e) {
+      console.error('Failed to load directory', e);
+    }
   }
 
   document.addEventListener('DOMContentLoaded', init);
