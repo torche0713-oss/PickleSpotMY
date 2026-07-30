@@ -1,89 +1,112 @@
-const { chromium } = require('playwright');
+const axios = require('axios');
+const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://picklepadel.my';
-const SITEMAP_URL = `${BASE_URL}/sitemap.xml`;
 const OUTPUT = path.join(__dirname, '..', 'data', 'scraped-picklepadel.json');
+const SITEMAP_URL = 'https://picklepadel.my/sitemap.xml';
+const BASE = 'https://picklepadel.my';
+const DELAY_MS = 500;
 
-async function getVenueSlugs() {
-  const browser = await chromium.launch({ headless: true });
-  const page = await browser.newPage();
-  await page.goto(SITEMAP_URL, { waitUntil: 'networkidle', timeout: 30000 });
-  const xml = await page.content();
-  await browser.close();
-
-  const slugRegex = /<loc>[^<]*\/en\/venues\/([^<]+)<\/loc>/g;
-  const slugs = [];
+async function getVenueIds() {
+  const { data: xml } = await axios.get(SITEMAP_URL, {
+    headers: { 'User-Agent': 'PickleSpotMY/1.0' },
+    timeout: 15000,
+  });
+  const regex = /<loc>[^<]*\/en\/venues\/([^<]+)<\/loc>/g;
+  const ids = new Set();
   let match;
-  while ((match = slugRegex.exec(xml)) !== null) {
-    slugs.push(match[1].replace(/\/$/, ''));
+  while ((match = regex.exec(xml)) !== null) {
+    ids.add(match[1].replace(/\/$/, ''));
   }
-  return [...new Set(slugs)];
+  return [...ids];
 }
 
-async function scrapeVenue(page, slug) {
-  try {
-    const url = `${BASE_URL}/en/venues/${slug}`;
-    await page.goto(url, { waitUntil: 'networkidle', timeout: 30000 });
-    await page.waitForTimeout(3000);
+function parseVenuePage(html, id) {
+  const $ = cheerio.load(html);
+  const result = { id, url: `${BASE}/en/venues/${id}`, source: 'picklepadel.my' };
 
-    const venue = await page.evaluate((slug) => {
-      const title = document.querySelector('title')?.textContent || '';
-      const metaDesc = document.querySelector('meta[name="description"]')?.content || '';
-      const ogTitle = document.querySelector('meta[property="og:title"]')?.content || '';
-      const ogDesc = document.querySelector('meta[property="og:description"]')?.content || '';
+  // Try to extract JSON-LD SportsActivityLocation
+  let jsonld = null;
+  $('script[type="application/ld+json"]').each((i, el) => {
+    try {
+      const data = JSON.parse($(el).html());
+      if (data['@type'] === 'SportsActivityLocation') {
+        jsonld = data;
+      }
+    } catch (e) {}
+  });
 
-      const h1 = document.querySelector('h1')?.textContent?.trim() || '';
-      const visible = document.body.innerText;
-
-      const extractAfter = (text, keyword) => {
-        const idx = text.indexOf(keyword);
-        if (idx === -1) return '';
-        return text.substring(idx, idx + 200).replace(keyword, '').split('\n')[0]?.trim() || '';
-      };
-
-      const name = h1 || ogTitle || title.split('|')[0]?.trim() || slug;
-      const description = ogDesc || metaDesc;
-
-      return {
-        slug,
-        name,
-        title,
-        description,
-        metaDescription: metaDesc,
-        ogTitle,
-        ogDescription: ogDesc,
-        url: `https://picklepadel.my/en/venues/${slug}`
-      };
-    }, slug);
-
-    return venue;
-  } catch (err) {
-    return { slug, error: err.message };
+  if (jsonld) {
+    result.name = jsonld.name || '';
+    result.description = jsonld.description || '';
+    if (jsonld.address) {
+      result.streetAddress = jsonld.address.streetAddress || '';
+      result.city = jsonld.address.addressLocality || '';
+      result.state = jsonld.address.addressRegion || '';
+    }
+    if (jsonld.geo) {
+      result.latitude = jsonld.geo.latitude;
+      result.longitude = jsonld.geo.longitude;
+    }
+    if (jsonld.amenityFeature) {
+      result.amenities = jsonld.amenityFeature
+        .filter(a => a.value === true || a.value === 'true')
+        .map(a => a.name);
+    }
+    if (jsonld.openingHoursSpecification) {
+      result.hours = jsonld.openingHoursSpecification.map(h => ({
+        day: h.dayOfWeek?.split('/').pop() || '',
+        opens: h.opens,
+        closes: h.closes,
+      }));
+    }
+    result.image = jsonld.image || '';
+    result.telephone = jsonld.telephone || '';
   }
+
+  // Fallback: get name from meta/h1
+  if (!result.name) {
+    result.name = $('h1').first().text().trim() || $('meta[property="og:title"]').attr('content')?.split('|')[0]?.trim() || '';
+  }
+  if (!result.description) {
+    result.description = $('meta[property="og:description"]').attr('content') || $('meta[name="description"]').attr('content') || '';
+  }
+
+  // Determine sport type from description/text
+  const bodyText = $('body').text().toLowerCase();
+  result.sport = bodyText.includes('padel') && !bodyText.includes('pickleball') ? 'padel' : 'pickleball';
+
+  return result;
 }
 
 async function scrape() {
-  console.log('Fetching venue slugs from sitemap...');
-  const slugs = await getVenueSlugs();
-  console.log(`Found ${slugs.length} venue slugs`);
-
-  const browser = await chromium.launch({ headless: true });
-  const context = await browser.newContext();
-  const page = await context.newPage();
+  console.log('Fetching venue IDs from sitemap...');
+  const ids = await getVenueIds();
+  console.log(`Found ${ids.length} venues`);
 
   const venues = [];
-  for (let i = 0; i < slugs.length; i++) {
-    process.stdout.write(`\rScraping ${i + 1}/${slugs.length}: ${slugs[i].substring(0, 30)}...`);
-    const venue = await scrapeVenue(page, slugs[i]);
-    venues.push(venue);
+  for (let i = 0; i < ids.length; i++) {
+    const id = ids[i];
+    process.stdout.write(`\r${i + 1}/${ids.length}: ${id.substring(0, 12)}...`);
+    try {
+      const { data: html } = await axios.get(`${BASE}/en/venues/${id}`, {
+        headers: { 'User-Agent': 'PickleSpotMY/1.0', 'Accept': 'text/html' },
+        timeout: 15000,
+      });
+      const venue = parseVenuePage(html, id);
+      if (venue.name) {
+        venues.push(venue);
+      }
+    } catch (err) {
+      // skip
+    }
+    await new Promise(r => setTimeout(r, DELAY_MS));
   }
 
   console.log(`\nSaving ${venues.length} venues...`);
   fs.writeFileSync(OUTPUT, JSON.stringify(venues, null, 2));
   console.log(`Saved to ${OUTPUT}`);
-  await browser.close();
 }
 
 scrape().catch(console.error);
