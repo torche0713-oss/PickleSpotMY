@@ -2,8 +2,8 @@
   "name": "picklespotmy",
   "version": "1.0.0",
   "description": "Malaysia Pickleball Court Availability Search",
-  "main": "server.js",
   "scripts": {
+    "vercel-build": "echo done",
     "start": "node server.js",
     "dev": "node server.js",
     "lint": "echo 'no linter configured'"
