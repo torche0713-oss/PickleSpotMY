@@ -4,56 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — PickleSpotMY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="/" class="logo">
-        <span class="logo-icon">🥒</span>
-        <span class="logo-text">PickleSpot<span class="logo-accent">MY</span></span>
-      </a>
-      <nav class="nav">
-        <a href="/">Home</a>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">🥒</span>
+      <span>PickleSpot<span class="brand-accent">MY</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="/" class="nav-link"><i class="fas fa-map-marked-alt"></i> Home</a>
+      <a href="/about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+      <a href="/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="/privacy.html" class="nav-link active"><i class="fas fa-shield-alt"></i> Privacy</a>
+    </div>
+  </nav>
+
+  <section class="hero" style="padding:80px 20px 60px">
+    <div class="hero-content">
+      <span class="hero-badge">🇲🇾 Privacy</span>
+      <h1>Privacy Policy</h1>
+      <p class="hero-sub">Last updated: July 2026</p>
+    </div>
+  </section>
+
+  <main style="max-width:720px;margin:0 auto;padding:40px 20px 60px">
+    <h2 style="font-size:22px;margin-bottom:12px;color:var(--primary)">Information We Collect</h2>
+    <p style="font-size:15px;line-height:1.8;color:#475569;margin-bottom:24px">PickleSpotMY does not collect, store, or process any personal user data. We do not use cookies, tracking scripts, or analytics that identify individual users. Our site queries third-party APIs (OpenCourt365) to display court availability. No personal information is transmitted in these requests.</p>
+
+    <h2 style="font-size:22px;margin-bottom:12px;color:var(--primary)">Affiliate Links</h2>
+    <p style="font-size:15px;line-height:1.8;color:#475569;margin-bottom:24px">Pages on PickleSpotMY may contain affiliate links to Shopee Malaysia. If you click an affiliate link and make a purchase, we may earn a commission at no extra cost to you. These links are disclosed with the notice "We may earn a commission from purchases."</p>
+
+    <h2 style="font-size:22px;margin-bottom:12px;color:var(--primary)">Third-Party Services</h2>
+    <p style="font-size:15px;line-height:1.8;color:#475569;margin-bottom:24px">Our site is hosted on Vercel. Vercel may collect standard server logs (IP address, browser type, timestamps) for operational purposes. Refer to <a href="https://vercel.com/legal/privacy-policy" target="_blank">Vercel's Privacy Policy</a> for details.</p>
+
+    <h2 style="font-size:22px;margin-bottom:12px;color:var(--primary)">Contact</h2>
+    <p style="font-size:15px;line-height:1.8;color:#475569;margin-bottom:24px">If you have questions about this policy, <a href="/contact.html">contact us</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span>🥒</span>
+        <span>PickleSpotMY</span>
+      </div>
+      <p class="footer-tagline">Finding pickleball courts in Malaysia made easy 🇲🇾</p>
+      <div class="footer-links">
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
         <a href="/privacy.html">Privacy</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>Last updated: July 2026</p>
       </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container">
-        <div style="max-width:720px;margin:0 auto;padding:32px 0;">
-          <h2>Information We Collect</h2>
-          <p>PickleSpotMY does not collect, store, or process any personal user data. We do not use cookies, tracking scripts, or analytics that identify individual users.</p>
-          <p>Our site queries third-party APIs (OpenCourt365) to display court availability. No personal information is transmitted in these requests.</p>
-
-          <h2 style="margin-top:32px;">Affiliate Links</h2>
-          <p>Pages on PickleSpotMY may contain affiliate links to Lazada Malaysia. If you click an affiliate link and make a purchase, we may earn a commission at no extra cost to you. These links are disclosed with the notice "We may earn a commission from purchases."</p>
-
-          <h2 style="margin-top:32px;">Third-Party Services</h2>
-          <p>Our site is hosted on Vercel. Vercel may collect standard server logs (IP address, browser type, timestamps) for operational purposes. Refer to <a href="https://vercel.com/legal/privacy-policy" target="_blank">Vercel's Privacy Policy</a> for details.</p>
-
-          <h2 style="margin-top:32px;">Contact</h2>
-          <p>If you have questions about this policy, <a href="/contact.html">contact us</a>.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>Data sourced from OpenCourt365, PicklePadel.my, and other platforms. Not affiliated with any listed venue.</p>
-      <p style="margin-top:8px;"><a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/privacy.html">Privacy</a></p>
+      <p class="footer-copy">&copy; 2026 PickleSpotMY &middot; All rights reserved</p>
     </div>
   </footer>
 </body>

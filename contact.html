@@ -4,46 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — PickleSpotMY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="/" class="logo">
-        <span class="logo-icon">🥒</span>
-        <span class="logo-text">PickleSpot<span class="logo-accent">MY</span></span>
-      </a>
-      <nav class="nav">
-        <a href="/">Home</a>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">🥒</span>
+      <span>PickleSpot<span class="brand-accent">MY</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="/" class="nav-link"><i class="fas fa-map-marked-alt"></i> Home</a>
+      <a href="/about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+      <a href="/contact.html" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="/privacy.html" class="nav-link"><i class="fas fa-shield-alt"></i> Privacy</a>
+    </div>
+  </nav>
+
+  <section class="hero" style="padding:80px 20px 60px">
+    <div class="hero-content">
+      <span class="hero-badge">🇲🇾 Contact</span>
+      <h1>Contact Us</h1>
+      <p class="hero-sub">Get in touch about venues, suggestions, or partnerships.</p>
+    </div>
+  </section>
+
+  <main style="max-width:600px;margin:0 auto;padding:40px 20px 60px;text-align:center">
+    <div style="background:linear-gradient(135deg,rgba(37,99,235,0.12),rgba(37,99,235,0.08));border:1px solid rgba(37,99,235,0.2);border-radius:16px;padding:40px">
+      <i class="fas fa-envelope" style="font-size:48px;color:var(--primary);margin-bottom:16px"></i>
+      <p style="font-size:18px;margin-bottom:8px;font-weight:600">Email us at:</p>
+      <p style="font-size:20px;font-weight:700;color:var(--primary);margin-bottom:24px">apexmindagency@gmail.com</p>
+      <p style="font-size:14px;color:#64748b;line-height:1.6">Want to add your venue, report incorrect info, or discuss partnership opportunities? Send us a message and we'll get back to you.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span>🥒</span>
+        <span>PickleSpotMY</span>
+      </div>
+      <p class="footer-tagline">Finding pickleball courts in Malaysia made easy 🇲🇾</p>
+      <div class="footer-links">
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
         <a href="/privacy.html">Privacy</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Contact Us</h1>
-        <p>Get in touch about venues, suggestions, or partnerships.</p>
       </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container">
-        <div style="max-width:600px;margin:0 auto;padding:32px 0;">
-          <p style="margin-bottom:16px;">Email: <strong>apexmindagency@gmail.com</strong></p>
-          <p>Want to add your venue, report incorrect info, or discuss partnership opportunities? Send us a message and we'll get back to you.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>Data sourced from OpenCourt365, PicklePadel.my, and other platforms. Not affiliated with any listed venue.</p>
-      <p style="margin-top:8px;"><a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/privacy.html">Privacy</a></p>
+      <p class="footer-copy">&copy; 2026 PickleSpotMY &middot; All rights reserved</p>
     </div>
   </footer>
 </body>
