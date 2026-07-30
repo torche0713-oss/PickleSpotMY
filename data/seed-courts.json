@@ -13276,5 +13276,2357 @@
     "source": "opencourt365.com.my",
     "source_url": "https://book.afa-sports.com/?auth=409",
     "status": "active"
+  },
+  {
+    "id": "dwi-emas-sports-complex",
+    "name": "Dwi Emas Sports Complex",
+    "slug": "dwi-emas-sports-complex",
+    "description": "Dwi Emas Sports Complex pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0727338,
+      "lng": 101.5248214
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Dwi%20Emas%20Sports%20Complex/clkv2ymsc3fmr067wednzkzym/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Dwi%20Emas%20Sports%20Complex/clkv2ymsc3fmr067wednzkzym/select",
+    "status": "active"
+  },
+  {
+    "id": "shah-alam-badminton-centre",
+    "name": "Shah Alam Badminton Centre",
+    "slug": "shah-alam-badminton-centre",
+    "description": "Shah Alam Badminton Centre pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0648414,
+      "lng": 101.5261924
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Shah%20Alam%20Badminton%20Centre/ckntrple007dd07azg4bkbuet/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Shah%20Alam%20Badminton%20Centre/ckntrple007dd07azg4bkbuet/select",
+    "status": "active"
+  },
+  {
+    "id": "pickle-x-shah-alam-icity",
+    "name": "Pickle X Shah Alam iCity",
+    "slug": "pickle-x-shah-alam-icity",
+    "description": "Pickle X Shah Alam iCity pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.06377,
+      "lng": 101.48875
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=318",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=318",
+    "status": "active"
+  },
+  {
+    "id": "pickle-loft",
+    "name": "Pickle Loft",
+    "slug": "pickle-loft",
+    "description": "Pickle Loft pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 3.20212,
+      "lng": 101.61875
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=536",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=536",
+    "status": "active"
+  },
+  {
+    "id": "hyprground-pickleball-sg-buloh",
+    "name": "Hyprground Pickleball - Sg Buloh",
+    "slug": "hyprground-pickleball-sg-buloh",
+    "description": "Hyprground Pickleball - Sg Buloh pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.1981043,
+      "lng": 101.5721046
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Hyprground%20Pickleball%20-%20Sg%20Buloh/cmj9fk9j6002808di20tepiif/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Hyprground%20Pickleball%20-%20Sg%20Buloh/cmj9fk9j6002808di20tepiif/select",
+    "status": "active"
+  },
+  {
+    "id": "sjk-c-sungai-buloh-badminton-centre",
+    "name": "SJK(C) Sungai Buloh Badminton Centre",
+    "slug": "sjk-c-sungai-buloh-badminton-centre",
+    "description": "SJK(C) Sungai Buloh Badminton Centre pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.1950061,
+      "lng": 101.5696992
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/SJK(C)%20Sungai%20Buloh%20Badminton%20Centre/clfqieapy04yn06b5gzsfx2ii/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/SJK(C)%20Sungai%20Buloh%20Badminton%20Centre/clfqieapy04yn06b5gzsfx2ii/select",
+    "status": "active"
+  },
+  {
+    "id": "smash-arena-tropicana-sports-center",
+    "name": "Smash Arena @ Tropicana Sports Center",
+    "slug": "smash-arena-tropicana-sports-center",
+    "description": "Smash Arena @ Tropicana Sports Center pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 3.2096942,
+      "lng": 101.5701037
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Smash%20Arena%20%40%20Tropicana%20Sports%20Center/cm84887uq00s408dpa352p15t/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Smash%20Arena%20%40%20Tropicana%20Sports%20Center/cm84887uq00s408dpa352p15t/select",
+    "status": "active"
+  },
+  {
+    "id": "sports-a-plus-4-kepong-badminton-centre",
+    "name": "Sports A Plus 4 (Kepong) Badminton Centre",
+    "slug": "sports-a-plus-4-kepong-badminton-centre",
+    "description": "Sports A Plus 4 (Kepong) Badminton Centre pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 3.2116061,
+      "lng": 101.6330792
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Sports%20A%20Plus%204%20(Kepong)%20Badminton%20Centre/cmjrytug821fh07aqbew501tn/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Sports%20A%20Plus%204%20(Kepong)%20Badminton%20Centre/cmjrytug821fh07aqbew501tn/select",
+    "status": "active"
+  },
+  {
+    "id": "playa-racquet-club-hextar-world",
+    "name": "PLAYA Racquet Club @ Hextar World",
+    "slug": "playa-racquet-club-hextar-world",
+    "description": "PLAYA Racquet Club @ Hextar World pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.167705,
+      "lng": 101.616206
+    },
+    "contact": {
+      "website": "https://app.playbypoint.com/book/hextarworld",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "playbypoint.com",
+    "source_url": "https://app.playbypoint.com/book/hextarworld",
+    "status": "active"
+  },
+  {
+    "id": "pumpy-pickleball",
+    "name": "Pumpy Pickleball",
+    "slug": "pumpy-pickleball",
+    "description": "Pumpy Pickleball pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 3.20512,
+      "lng": 101.63585
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=546",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=546",
+    "status": "active"
+  },
+  {
+    "id": "mypicklecourt",
+    "name": "MyPickleCourt",
+    "slug": "mypicklecourt",
+    "description": "MyPickleCourt pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 3.2134007,
+      "lng": 101.6369213
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/MyPickleCourt/cml08inwp0kjf07at8guyfdu8/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/MyPickleCourt/cml08inwp0kjf07at8guyfdu8/select",
+    "status": "active"
+  },
+  {
+    "id": "lavana-3-badminton-centre-kepong",
+    "name": "Lavana 3 Badminton Centre @ Kepong",
+    "slug": "lavana-3-badminton-centre-kepong",
+    "description": "Lavana 3 Badminton Centre @ Kepong pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 3.2061531,
+      "lng": 101.6406427
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Lavana%203%20Badminton%20Centre%20%40%20Kepong/clzuvlgx90mph07cv2rfi0knv/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Lavana%203%20Badminton%20Centre%20%40%20Kepong/clzuvlgx90mph07cv2rfi0knv/select",
+    "status": "active"
+  },
+  {
+    "id": "pickle-point-malaysia",
+    "name": "Pickle Point Malaysia",
+    "slug": "pickle-point-malaysia",
+    "description": "Pickle Point Malaysia pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.1612384,
+      "lng": 101.6166848
+    },
+    "contact": {
+      "website": "https://app.playbypoint.com/book/picklepointmy",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "playbypoint.com",
+    "source_url": "https://app.playbypoint.com/book/picklepointmy",
+    "status": "active"
+  },
+  {
+    "id": "port-klang-pickleball-centre",
+    "name": "Port Klang Pickleball Centre",
+    "slug": "port-klang-pickleball-centre",
+    "description": "Port Klang Pickleball Centre pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0015926,
+      "lng": 101.3971411
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Port%20Klang%20Pickleball%20Centre/cmkkxa8rd1kj108cgpk43va2d/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Port%20Klang%20Pickleball%20Centre/cmkkxa8rd1kj108cgpk43va2d/select",
+    "status": "active"
+  },
+  {
+    "id": "qna-court-culture",
+    "name": "QNA Court Culture",
+    "slug": "qna-court-culture",
+    "description": "QNA Court Culture pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.01964,
+      "lng": 101.41349
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=529",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=529",
+    "status": "active"
+  },
+  {
+    "id": "smash2u-sports-hub",
+    "name": "Smash2u Sports Hub",
+    "slug": "smash2u-sports-hub",
+    "description": "Smash2u Sports Hub pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0095284,
+      "lng": 101.433242
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Smash2u%20Sports%20Hub%20/cmfosawhi04kz0867xyhf1ixi/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Smash2u%20Sports%20Hub%20/cmfosawhi04kz0867xyhf1ixi/select",
+    "status": "active"
+  },
+  {
+    "id": "pad-pickleball-premi-re-hotel",
+    "name": "PAD Pickleball @ Première Hotel",
+    "slug": "pad-pickleball-premi-re-hotel",
+    "description": "PAD Pickleball @ Première Hotel pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0071691,
+      "lng": 101.4413167
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/PAD%20Pickleball%20%40%20Premi%C3%A8re%20Hotel/cmqt84wgj013fs0eu7503ma0z/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/PAD%20Pickleball%20%40%20Premi%C3%A8re%20Hotel/cmqt84wgj013fs0eu7503ma0z/select",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-centrus-courtyard",
+    "name": "Pickleball @ Centrus Courtyard",
+    "slug": "pickleball-centrus-courtyard",
+    "description": "Pickleball @ Centrus Courtyard pickleball venue in Negeri Sembilan.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Negeri Sembilan",
+      "lat": 2.9229,
+      "lng": 101.65132
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=364",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=364",
+    "status": "active"
+  },
+  {
+    "id": "bounce-and-rally-elevate-social-club-cyberjaya",
+    "name": "Bounce And Rally @ Elevate Social Club Cyberjaya",
+    "slug": "bounce-and-rally-elevate-social-club-cyberjaya",
+    "description": "Bounce And Rally @ Elevate Social Club Cyberjaya pickleball venue in Negeri Sembilan.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Negeri Sembilan",
+      "lat": 2.9153601,
+      "lng": 101.6442117
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Bounce%20And%20Rally%20%40%20Elevate%20Social%20Club%20Cyberjaya/cma7usya10zu608ftp93e4tjn/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Bounce%20And%20Rally%20%40%20Elevate%20Social%20Club%20Cyberjaya/cma7usya10zu608ftp93e4tjn/select",
+    "status": "active"
+  },
+  {
+    "id": "shaftsbury-sports",
+    "name": "Shaftsbury Sports",
+    "slug": "shaftsbury-sports",
+    "description": "Shaftsbury Sports pickleball venue in Negeri Sembilan.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Negeri Sembilan",
+      "lat": 2.9216629,
+      "lng": 101.6605463
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Shaftsbury%20Sports/clhixqkb50zon075306244n30/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Shaftsbury%20Sports/clhixqkb50zon075306244n30/select",
+    "status": "active"
+  },
+  {
+    "id": "pickle-garden-cvr",
+    "name": "Pickle Garden @ CVR",
+    "slug": "pickle-garden-cvr",
+    "description": "Pickle Garden @ CVR pickleball venue in Negeri Sembilan.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Negeri Sembilan",
+      "lat": 2.92421,
+      "lng": 101.66733
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=511",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=511",
+    "status": "active"
+  },
+  {
+    "id": "pickle-by-the-lake",
+    "name": "Pickle By The Lake",
+    "slug": "pickle-by-the-lake",
+    "description": "Pickle By The Lake pickleball venue in Negeri Sembilan.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Negeri Sembilan",
+      "lat": 2.9312093,
+      "lng": 101.6072915
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Pickle%20By%20The%20Lake/cmlx2tm5a04z8ml4lkqpdw4qw/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Pickle%20By%20The%20Lake/cmlx2tm5a04z8ml4lkqpdw4qw/select",
+    "status": "active"
+  },
+  {
+    "id": "sports-a-plus-2-taman-mastiara-badminton-centre",
+    "name": "Sports A Plus 2 (Taman Mastiara) Badminton Centre",
+    "slug": "sports-a-plus-2-taman-mastiara-badminton-centre",
+    "description": "Sports A Plus 2 (Taman Mastiara) Badminton Centre pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 3.2134432,
+      "lng": 101.6724805
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Sports%20A%20Plus%202%20(Taman%20Mastiara)%20Badminton%20Centre/cmoh5co6d03j308f8vghwf42h/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Sports%20A%20Plus%202%20(Taman%20Mastiara)%20Badminton%20Centre/cmoh5co6d03j308f8vghwf42h/select",
+    "status": "active"
+  },
+  {
+    "id": "the-rally-pickleball",
+    "name": "The Rally Pickleball",
+    "slug": "the-rally-pickleball",
+    "description": "The Rally Pickleball pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.04308,
+      "lng": 101.5628
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=552",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=552",
+    "status": "active"
+  },
+  {
+    "id": "city-pickle",
+    "name": "City Pickle",
+    "slug": "city-pickle",
+    "description": "City Pickle pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0221586,
+      "lng": 101.580368
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "usj23-badminton-court-pickleball-centre",
+    "name": "USJ23 Badminton Court & Pickleball Centre",
+    "slug": "usj23-badminton-court-pickleball-centre",
+    "description": "USJ23 Badminton Court & Pickleball Centre pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0248751,
+      "lng": 101.5884908
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/USJ23%20Badminton%20Court%20%26%20Pickleball%20Centre/cl5rkqef922du0q8ao7ty099z/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/USJ23%20Badminton%20Court%20%26%20Pickleball%20Centre/cl5rkqef922du0q8ao7ty099z/select",
+    "status": "active"
+  },
+  {
+    "id": "the-pickle-fence",
+    "name": "The Pickle Fence",
+    "slug": "the-pickle-fence",
+    "description": "The Pickle Fence pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0254244,
+      "lng": 101.5907042
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/The%20Pickle%20Fence/cmkq5y0yt0ack08c1ry98niui/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/The%20Pickle%20Fence/cmkq5y0yt0ack08c1ry98niui/select",
+    "status": "active"
+  },
+  {
+    "id": "dewan-serbaguna-mph",
+    "name": "Dewan Serbaguna MPH",
+    "slug": "dewan-serbaguna-mph",
+    "description": "Dewan Serbaguna MPH pickleball venue in Negeri Sembilan.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Negeri Sembilan",
+      "lat": 2.99759,
+      "lng": 101.57627
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=245",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=245",
+    "status": "active"
+  },
+  {
+    "id": "premier-subang-pickleball",
+    "name": "Premier Subang Pickleball",
+    "slug": "premier-subang-pickleball",
+    "description": "Premier Subang Pickleball pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.07009,
+      "lng": 101.59677
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=299",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=299",
+    "status": "active"
+  },
+  {
+    "id": "monsterball-social-club",
+    "name": "MonsterBall Social Club",
+    "slug": "monsterball-social-club",
+    "description": "MonsterBall Social Club pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.07013,
+      "lng": 101.59549
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=527",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=527",
+    "status": "active"
+  },
+  {
+    "id": "x-park-sunway-south-quay",
+    "name": "X Park Sunway South Quay",
+    "slug": "x-park-sunway-south-quay",
+    "description": "X Park Sunway South Quay pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0600083,
+      "lng": 101.6038614
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/X%20Park%20Sunway%20South%20Quay/cl70afb1503un078k79756yit/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/X%20Park%20Sunway%20South%20Quay/cl70afb1503un078k79756yit/select",
+    "status": "active"
+  },
+  {
+    "id": "cps-subang-badminton-sports-centre",
+    "name": "CPS Subang Badminton Sports Centre",
+    "slug": "cps-subang-badminton-sports-centre",
+    "description": "CPS Subang Badminton Sports Centre pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0586219,
+      "lng": 101.5948313
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/CPS%20Subang%20Badminton%20Sports%20Centre/cm7rnasw00kjc08dob4634mai/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/CPS%20Subang%20Badminton%20Sports%20Centre/cm7rnasw00kjc08dob4634mai/select",
+    "status": "active"
+  },
+  {
+    "id": "pjs-sports-centre",
+    "name": "PJS Sports Centre",
+    "slug": "pjs-sports-centre",
+    "description": "PJS Sports Centre pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.073148,
+      "lng": 101.6192364
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/PJS%20Sports%20Centre/clgbudcoo0afv077z1jv15s1n/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/PJS%20Sports%20Centre/clgbudcoo0afv077z1jv15s1n/select",
+    "status": "active"
+  },
+  {
+    "id": "jompickle-icon-city-pj",
+    "name": "Jompickle @ Icon City PJ",
+    "slug": "jompickle-icon-city-pj",
+    "description": "Jompickle @ Icon City PJ pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.086366,
+      "lng": 101.6138819
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Jompickle%20%40%20Icon%20City%20PJ/cm2jvdybz2zw609fctjym7tuz/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Jompickle%20%40%20Icon%20City%20PJ/cm2jvdybz2zw609fctjym7tuz/select",
+    "status": "active"
+  },
+  {
+    "id": "pickle-haven-usj",
+    "name": "Pickle Haven USJ",
+    "slug": "pickle-haven-usj",
+    "description": "Pickle Haven USJ pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.04692,
+      "lng": 101.59583
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=459",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=459",
+    "status": "active"
+  },
+  {
+    "id": "srgc-subang-racquet-golf-centre",
+    "name": "SRGC - Subang Racquet & Golf Centre",
+    "slug": "srgc-subang-racquet-golf-centre",
+    "description": "SRGC - Subang Racquet & Golf Centre pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.08129,
+      "lng": 101.57868
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=160",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=160",
+    "status": "active"
+  },
+  {
+    "id": "cpc-sports-center",
+    "name": "CPC Sports Center",
+    "slug": "cpc-sports-center",
+    "description": "CPC Sports Center pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0833853,
+      "lng": 101.6231028
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/CPC%20Sports%20Center/cmq7zchvp02ta08b8jug3di7u/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/CPC%20Sports%20Center/cmq7zchvp02ta08b8jug3di7u/select",
+    "status": "active"
+  },
+  {
+    "id": "lavana-2-sports-centre-subang",
+    "name": "Lavana 2 Sports Centre @ Subang",
+    "slug": "lavana-2-sports-centre-subang",
+    "description": "Lavana 2 Sports Centre @ Subang pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0427678,
+      "lng": 101.5985355
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Lavana%202%20Sports%20Centre%20%40%20Subang/cm7mz4w2k03d1087p3uppxt41/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Lavana%202%20Sports%20Centre%20%40%20Subang/cm7mz4w2k03d1087p3uppxt41/select",
+    "status": "active"
+  },
+  {
+    "id": "forum-optimum-badminton-centre",
+    "name": "Forum Optimum Badminton Centre",
+    "slug": "forum-optimum-badminton-centre",
+    "description": "Forum Optimum Badminton Centre pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0428577,
+      "lng": 101.5945931
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Forum%20Optimum%20Badminton%20Centre/01DN1X7MV10B0DK6844N2YPFKZ/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Forum%20Optimum%20Badminton%20Centre/01DN1X7MV10B0DK6844N2YPFKZ/select",
+    "status": "active"
+  },
+  {
+    "id": "dink-pickle-daily",
+    "name": "Dink! Pickle Daily",
+    "slug": "dink-pickle-daily",
+    "description": "Dink! Pickle Daily pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0889446,
+      "lng": 101.6235388
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "pickle-wave",
+    "name": "Pickle Wave",
+    "slug": "pickle-wave",
+    "description": "Pickle Wave pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0541193,
+      "lng": 101.6258691
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Pickle%20Wave/cmj0zpaap0bop08a1ul7b2brn/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Pickle%20Wave/cmj0zpaap0bop08a1ul7b2brn/select",
+    "status": "active"
+  },
+  {
+    "id": "tt-sports-centre-pj",
+    "name": "TT Sports Centre @ PJ",
+    "slug": "tt-sports-centre-pj",
+    "description": "TT Sports Centre @ PJ pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0853638,
+      "lng": 101.6266161
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/TT%20Sports%20Centre%20%40%20PJ/clhh79bog0hyb065d1r7y2t7e/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/TT%20Sports%20Centre%20%40%20PJ/clhh79bog0hyb065d1r7y2t7e/select",
+    "status": "active"
+  },
+  {
+    "id": "pickle-world-pj-jalan-tandang",
+    "name": "Pickle World @ PJ (Jalan Tandang)",
+    "slug": "pickle-world-pj-jalan-tandang",
+    "description": "Pickle World @ PJ (Jalan Tandang) pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.085567,
+      "lng": 101.6266321
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Pickle%20World%20%40%20PJ%20(Jalan%20Tandang)/cm1a9kqoi20lf08amauti7nyg/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Pickle%20World%20%40%20PJ%20(Jalan%20Tandang)/cm1a9kqoi20lf08amauti7nyg/select",
+    "status": "active"
+  },
+  {
+    "id": "pj-sports-club",
+    "name": "PJ Sports Club",
+    "slug": "pj-sports-club",
+    "description": "PJ Sports Club pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0882089,
+      "lng": 101.6255616
+    },
+    "contact": {
+      "website": "https://app.playbypoint.com/book/pjsportsclub",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "playbypoint.com",
+    "source_url": "https://app.playbypoint.com/book/pjsportsclub",
+    "status": "active"
+  },
+  {
+    "id": "rcp-racquet-club-puchong-badminton-pickleball",
+    "name": "RCP Racquet Club Puchong (Badminton & Pickleball)",
+    "slug": "rcp-racquet-club-puchong-badminton-pickleball",
+    "description": "RCP Racquet Club Puchong (Badminton & Pickleball) pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.05919,
+      "lng": 101.63131
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=209",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=209",
+    "status": "active"
+  },
+  {
+    "id": "sbs-arena",
+    "name": "SBS Arena",
+    "slug": "sbs-arena",
+    "description": "SBS Arena pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0597,
+      "lng": 101.63691
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=533",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=533",
+    "status": "active"
+  },
+  {
+    "id": "white-fairy-badminton-court",
+    "name": "White Fairy Badminton Court",
+    "slug": "white-fairy-badminton-court",
+    "description": "White Fairy Badminton Court pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0596978,
+      "lng": 101.6369138
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/White%20Fairy%20Badminton%20Court/01CC9QMZGZNQEYZ5E0XZDZFTC8/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/White%20Fairy%20Badminton%20Court/01CC9QMZGZNQEYZ5E0XZDZFTC8/select",
+    "status": "active"
+  },
+  {
+    "id": "pickletime-pj-city-section-51a",
+    "name": "Pickletime PJ City • Section 51A",
+    "slug": "pickletime-pj-city-section-51a",
+    "description": "Pickletime PJ City • Section 51A pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.09419,
+      "lng": 101.63219
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=543",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=543",
+    "status": "active"
+  },
+  {
+    "id": "pickletime-pj-section-51a",
+    "name": "Pickletime PJ - Section 51a",
+    "slug": "pickletime-pj-section-51a",
+    "description": "Pickletime PJ - Section 51a pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0943268,
+      "lng": 101.6321609
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Pickletime%20PJ%20-%20Section%2051a/cm9lgekcg00c04ncqxz4zld5c/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Pickletime%20PJ%20-%20Section%2051a/cm9lgekcg00c04ncqxz4zld5c/select",
+    "status": "active"
+  },
+  {
+    "id": "222-sports-centre-pj",
+    "name": "222 Sports Centre PJ",
+    "slug": "222-sports-centre-pj",
+    "description": "222 Sports Centre PJ pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0948972,
+      "lng": 101.6320246
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/222%20Sports%20Centre%20PJ/ckwgez18r013u067o7j1hp29q/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/222%20Sports%20Centre%20PJ/ckwgez18r013u067o7j1hp29q/select",
+    "status": "active"
+  },
+  {
+    "id": "pickle-garden",
+    "name": "Pickle Garden",
+    "slug": "pickle-garden",
+    "description": "Pickle Garden pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.0950028,
+      "lng": 101.6323727
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Pickle%20Garden/cmnvc2i570jub07fe2io2ibb1/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Pickle%20Garden/cmnvc2i570jub07fe2io2ibb1/select",
+    "status": "active"
+  },
+  {
+    "id": "xpickle-pj",
+    "name": "xpickle @ PJ",
+    "slug": "xpickle-pj",
+    "description": "xpickle @ PJ pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.098754,
+      "lng": 101.6332879
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/xpickle%20%40%20PJ/cmmou2umi010m078m337bct9p/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/xpickle%20%40%20PJ/cmmou2umi010m078m337bct9p/select",
+    "status": "active"
+  },
+  {
+    "id": "setapak-badminton-centre",
+    "name": "Setapak Badminton Centre",
+    "slug": "setapak-badminton-centre",
+    "description": "Setapak Badminton Centre pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.1967409,
+      "lng": 101.7236994
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Setapak%20Badminton%20Centre/cl3hde6gg1u2s07c79lo1b256/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Setapak%20Badminton%20Centre/cl3hde6gg1u2s07c79lo1b256/select",
+    "status": "active"
+  },
+  {
+    "id": "connect-22-racquet-club",
+    "name": "Connect 22 Racquet Club",
+    "slug": "connect-22-racquet-club",
+    "description": "Connect 22 Racquet Club pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.1970858,
+      "lng": 101.7218312
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Connect%2022%20Racquet%20Club/cmq941g5w05k208b1yiyz7ffc/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Connect%2022%20Racquet%20Club/cmq941g5w05k208b1yiyz7ffc/select",
+    "status": "active"
+  },
+  {
+    "id": "lavana-sports-centre-setapak",
+    "name": "Lavana Sports Centre @ Setapak",
+    "slug": "lavana-sports-centre-setapak",
+    "description": "Lavana Sports Centre @ Setapak pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 3.2022206,
+      "lng": 101.7183685
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Lavana%20Sports%20Centre%20%40%20Setapak/cmadk4351025i3z8l865q6f42/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Lavana%20Sports%20Centre%20%40%20Setapak/cmadk4351025i3z8l865q6f42/select",
+    "status": "active"
+  },
+  {
+    "id": "premier-kl-pickleball",
+    "name": "Premier KL Pickleball",
+    "slug": "premier-kl-pickleball",
+    "description": "Premier KL Pickleball pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.17729,
+      "lng": 101.74784
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=503",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=503",
+    "status": "active"
+  },
+  {
+    "id": "spin-city-courts-great-eastern-mall-ampang",
+    "name": "Spin City Courts @ Great Eastern Mall, Ampang",
+    "slug": "spin-city-courts-great-eastern-mall-ampang",
+    "description": "Spin City Courts @ Great Eastern Mall, Ampang pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.1600725,
+      "lng": 101.7369013
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Spin%20City%20Courts%20%40%20Great%20Eastern%20Mall%2C%20Ampang/cmno9rpss03o8r09dyotcvvx9/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Spin%20City%20Courts%20%40%20Great%20Eastern%20Mall%2C%20Ampang/cmno9rpss03o8r09dyotcvvx9/select",
+    "status": "active"
+  },
+  {
+    "id": "w-sentul-badminton-centre",
+    "name": "W (Sentul) Badminton Centre",
+    "slug": "w-sentul-badminton-centre",
+    "description": "W (Sentul) Badminton Centre pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 3.201472,
+      "lng": 101.6892579
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/W%20(Sentul)%20Badminton%20Centre/cm01rvegl06rw08awhqljoffg/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/W%20(Sentul)%20Badminton%20Centre/cm01rvegl06rw08awhqljoffg/select",
+    "status": "active"
+  },
+  {
+    "id": "pickle-world-amp-jalan-ampang",
+    "name": "Pickle World @ AMP (Jalan Ampang)",
+    "slug": "pickle-world-amp-jalan-ampang",
+    "description": "Pickle World @ AMP (Jalan Ampang) pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.1592234,
+      "lng": 101.7351268
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Pickle%20World%20%40%20AMP%20(Jalan%20Ampang)/cmnwhqywn0ndt07d1a2ifmxh3/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Pickle%20World%20%40%20AMP%20(Jalan%20Ampang)/cmnwhqywn0ndt07d1a2ifmxh3/select",
+    "status": "active"
+  },
+  {
+    "id": "embassy-villa-by-cobnb",
+    "name": "Embassy Villa by COBNB",
+    "slug": "embassy-villa-by-cobnb",
+    "description": "Embassy Villa by COBNB pickleball venue in Kuala Lumpur.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Kuala Lumpur",
+      "lat": 3.15765,
+      "lng": 101.72988
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=421",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=421",
+    "status": "active"
+  },
+  {
+    "id": "wirasports-hideout-gurney-cny-promo",
+    "name": "WIRASPORTS Hideout @ Gurney 【CNY PROMO】",
+    "slug": "wirasports-hideout-gurney-cny-promo",
+    "description": "WIRASPORTS Hideout @ Gurney 【CNY PROMO】 pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.441074700000001,
+      "lng": 100.3078316
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "wirasports-hideout-merdeka-promo",
+    "name": "WIRASPORTS Hideout【MERDEKA PROMO】",
+    "slug": "wirasports-hideout-merdeka-promo",
+    "description": "WIRASPORTS Hideout【MERDEKA PROMO】 pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.441074700000001,
+      "lng": 100.3078316
+    },
+    "contact": {
+      "website": "https://www.swp.solemas.com/booking/venue_details/ISDXDYFTUP/booking_confirmations",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.swp.solemas.com/booking/venue_details/ISDXDYFTUP/booking_confirmations",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-yard",
+    "name": "Pickleball Yard",
+    "slug": "pickleball-yard",
+    "description": "Pickleball Yard pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.447225,
+      "lng": 100.3071625
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "pickleball-yard-anniversary-promo",
+    "name": "Pickleball Yard (Anniversary Promo)",
+    "slug": "pickleball-yard-anniversary-promo",
+    "description": "Pickleball Yard (Anniversary Promo) pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.447225,
+      "lng": 100.3071625
+    },
+    "contact": {
+      "website": "https://www.swp.solemas.com/booking/venue_details/ISPCKYAD/booking_confirmations",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.swp.solemas.com/booking/venue_details/ISPCKYAD/booking_confirmations",
+    "status": "active"
+  },
+  {
+    "id": "heritage-courts",
+    "name": "Heritage Courts",
+    "slug": "heritage-courts",
+    "description": "Heritage Courts pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.432566899999999,
+      "lng": 100.3081725
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "pickle-by-the-sea-gurney-drive",
+    "name": "Pickle By The Sea, Gurney Drive",
+    "slug": "pickle-by-the-sea-gurney-drive",
+    "description": "Pickle By The Sea, Gurney Drive pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.4397677,
+      "lng": 100.3105925
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "picklecube-alma",
+    "name": "PICKLECUBE ALMA",
+    "slug": "picklecube-alma",
+    "description": "PICKLECUBE ALMA pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.3346804,
+      "lng": 100.4813133
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "pickachill",
+    "name": "PickAChill",
+    "slug": "pickachill",
+    "description": "PickAChill pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.3343063,
+      "lng": 100.4529543
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "pickle-town",
+    "name": "Pickle Town",
+    "slug": "pickle-town",
+    "description": "Pickle Town pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.3056823,
+      "lng": 100.4799686
+    },
+    "contact": {
+      "website": "https://www.swp.solemas.com/booking/venue_details/ISXTX4Y1VJ/booking_confirmations",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.swp.solemas.com/booking/venue_details/ISXTX4Y1VJ/booking_confirmations",
+    "status": "active"
+  },
+  {
+    "id": "baby-g-pickleball-permatang-tinggi",
+    "name": "Baby G Pickleball Permatang Tinggi",
+    "slug": "baby-g-pickleball-permatang-tinggi",
+    "description": "Baby G Pickleball Permatang Tinggi pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.3011245,
+      "lng": 100.4700278
+    },
+    "contact": {
+      "website": "https://www.swp.solemas.com/booking/venue_details/ISNRDPZVD6/booking_confirmations",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.swp.solemas.com/booking/venue_details/ISNRDPZVD6/booking_confirmations",
+    "status": "active"
+  },
+  {
+    "id": "picker-pickle-by-vangohh-1987-vangohh-eminent",
+    "name": "Picker Pickle by Vangohh 1987 @ Vangohh Eminent",
+    "slug": "picker-pickle-by-vangohh-1987-vangohh-eminent",
+    "description": "Picker Pickle by Vangohh 1987 @ Vangohh Eminent pickleball venue in Perak.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Perak",
+      "lat": 5.3300465,
+      "lng": 100.5002285
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Picker%20Pickle%20by%20Vangohh%201987%20%40%20Vangohh%20Eminent/cm3r1kavi06ea088wnraclkb0/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Picker%20Pickle%20by%20Vangohh%201987%20%40%20Vangohh%20Eminent/cm3r1kavi06ea088wnraclkb0/select",
+    "status": "active"
+  },
+  {
+    "id": "picklesquad-bukit-mertajam",
+    "name": "PickleSquad Bukit Mertajam",
+    "slug": "picklesquad-bukit-mertajam",
+    "description": "PickleSquad Bukit Mertajam pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.3546784,
+      "lng": 100.4495229
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "pickle-royale-icon-city",
+    "name": "Pickle Royale @ Icon City",
+    "slug": "pickle-royale-icon-city",
+    "description": "Pickle Royale @ Icon City pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.341232199999999,
+      "lng": 100.4337185
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "pickle-play-park",
+    "name": "Pickle Play Park",
+    "slug": "pickle-play-park",
+    "description": "Pickle Play Park pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.3514576,
+      "lng": 100.4386831
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "chk-arena",
+    "name": "CHK Arena",
+    "slug": "chk-arena",
+    "description": "CHK Arena pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.3694177,
+      "lng": 100.4639079
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/CHK%20Arena/cm01q4sf2040008by25vxocyv/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/CHK%20Arena/cm01q4sf2040008by25vxocyv/select",
+    "status": "active"
+  },
+  {
+    "id": "bm-pickle-sport-centre",
+    "name": "BM PICKLE SPORT CENTRE",
+    "slug": "bm-pickle-sport-centre",
+    "description": "BM PICKLE SPORT CENTRE pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.3713698,
+      "lng": 100.4652096
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "bubble-sports-complex-tebrau",
+    "name": "Bubble Sports Complex Tebrau",
+    "slug": "bubble-sports-complex-tebrau",
+    "description": "Bubble Sports Complex Tebrau pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 1.55178,
+      "lng": 103.79409
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=137",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=137",
+    "status": "active"
+  },
+  {
+    "id": "super-sports-badminton-academy",
+    "name": "SUPER SPORTS BADMINTON ACADEMY",
+    "slug": "super-sports-badminton-academy",
+    "description": "SUPER SPORTS BADMINTON ACADEMY pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 1.54187,
+      "lng": 103.74792
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=531",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=531",
+    "status": "active"
+  },
+  {
+    "id": "tebrau-sports-recreation-centre",
+    "name": "Tebrau Sports & Recreation Centre",
+    "slug": "tebrau-sports-recreation-centre",
+    "description": "Tebrau Sports & Recreation Centre pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 1.58138,
+      "lng": 103.80211
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=206",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=206",
+    "status": "active"
+  },
+  {
+    "id": "play-at-dewani",
+    "name": "Play! at Dewani",
+    "slug": "play-at-dewani",
+    "description": "Play! at Dewani pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 1.52004,
+      "lng": 103.75237
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=462",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=462",
+    "status": "active"
+  },
+  {
+    "id": "tampoi-satellite-sports-complex",
+    "name": "Tampoi - Satellite Sports Complex",
+    "slug": "tampoi-satellite-sports-complex",
+    "description": "Tampoi - Satellite Sports Complex pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 1.523,
+      "lng": 103.74893
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=197",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=197",
+    "status": "active"
+  },
+  {
+    "id": "gotta-bounce-sports-social-club",
+    "name": "Gotta‘ Bounce Sports & Social Club",
+    "slug": "gotta-bounce-sports-social-club",
+    "description": "Gotta‘ Bounce Sports & Social Club pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 1.523,
+      "lng": 103.74893
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=310",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=310",
+    "status": "active"
+  },
+  {
+    "id": "kicks-the-pickle-exchange-taman-gembira-johor-bahru",
+    "name": "KICKS - The Pickle Exchange | Taman Gembira, Johor Bahru",
+    "slug": "kicks-the-pickle-exchange-taman-gembira-johor-bahru",
+    "description": "KICKS - The Pickle Exchange | Taman Gembira, Johor Bahru pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 1.52235,
+      "lng": 103.74945
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=371",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=371",
+    "status": "active"
+  },
+  {
+    "id": "pickle-friends-lotuss-plentong-powered-by-ori5in",
+    "name": "Pickle Friends @ Lotuss Plentong Powered by ORI5IN",
+    "slug": "pickle-friends-lotuss-plentong-powered-by-ori5in",
+    "description": "Pickle Friends @ Lotuss Plentong Powered by ORI5IN pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 1.52183,
+      "lng": 103.815
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=288",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=288",
+    "status": "active"
+  },
+  {
+    "id": "empire-pickle-club-kluang",
+    "name": "Empire Pickle Club - Kluang",
+    "slug": "empire-pickle-club-kluang",
+    "description": "Empire Pickle Club - Kluang pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 2.04004,
+      "lng": 103.31786
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=493",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=493",
+    "status": "active"
+  },
+  {
+    "id": "pickle-sports",
+    "name": "PICKLE SPORTS",
+    "slug": "pickle-sports",
+    "description": "PICKLE SPORTS pickleball venue in Johor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Johor",
+      "lat": 2.0064273,
+      "lng": 103.2841877
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "the-pickle-junc",
+    "name": "The Pickle Junc",
+    "slug": "the-pickle-junc",
+    "description": "The Pickle Junc pickleball venue in Selangor.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Selangor",
+      "lat": 4.2076886,
+      "lng": 100.6390035
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/The%20Pickle%20Junc/cmpm06oa4057t0890olpwrnf5/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/The%20Pickle%20Junc/cmpm06oa4057t0890olpwrnf5/select",
+    "status": "active"
+  },
+  {
+    "id": "wirasports-taman-wira",
+    "name": "⭐️ WIRASPORTS (Taman Wira)",
+    "slug": "wirasports-taman-wira",
+    "description": "⭐️ WIRASPORTS (Taman Wira) pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.656000400000001,
+      "lng": 100.4970603
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/%E2%AD%90%EF%B8%8F%20WIRASPORTS%20(Taman%20Wira)/clzja3f0u002h0894filyc3w2/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/%E2%AD%90%EF%B8%8F%20WIRASPORTS%20(Taman%20Wira)/clzja3f0u002h0894filyc3w2/select",
+    "status": "active"
+  },
+  {
+    "id": "ct-advance-sports",
+    "name": "CT Advance Sports",
+    "slug": "ct-advance-sports",
+    "description": "CT Advance Sports pickleball venue in Perak.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Perak",
+      "lat": 5.6389517,
+      "lng": 100.504631
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/CT%20Advance%20Sports/ckutnxjxf031l06ezxogrmhhu/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/CT%20Advance%20Sports/ckutnxjxf031l06ezxogrmhhu/select",
+    "status": "active"
+  },
+  {
+    "id": "pickle-heaven-eupe-food-court",
+    "name": "Pickle Heaven(EUPE FOOD COURT)",
+    "slug": "pickle-heaven-eupe-food-court",
+    "description": "Pickle Heaven(EUPE FOOD COURT) pickleball venue in Perak.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Perak",
+      "lat": 5.652482,
+      "lng": 100.5175933
+    },
+    "contact": {
+      "website": "https://www.swp.solemas.com/booking/venue_details/ISPHSPK/booking_confirmations",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.swp.solemas.com/booking/venue_details/ISPHSPK/booking_confirmations",
+    "status": "active"
+  },
+  {
+    "id": "pickle-era",
+    "name": "PICKLE ERA",
+    "slug": "pickle-era",
+    "description": "PICKLE ERA pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.6393382,
+      "lng": 100.4818682
+    },
+    "contact": {
+      "website": "",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "",
+    "status": "active"
+  },
+  {
+    "id": "wirasports-bakar-arang",
+    "name": "⭐️ WIRASPORTS (Bakar Arang)",
+    "slug": "wirasports-bakar-arang",
+    "description": "⭐️ WIRASPORTS (Bakar Arang) pickleball venue in Penang.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Penang",
+      "lat": 5.6244808,
+      "lng": 100.4928661
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/%E2%AD%90%EF%B8%8F%20WIRASPORTS%20(Bakar%20Arang)/clzjsizvw07e30693grk2tolh/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/%E2%AD%90%EF%B8%8F%20WIRASPORTS%20(Bakar%20Arang)/clzjsizvw07e30693grk2tolh/select",
+    "status": "active"
+  },
+  {
+    "id": "ipss-pickleball-academy",
+    "name": "iPSS Pickleball Academy",
+    "slug": "ipss-pickleball-academy",
+    "description": "iPSS Pickleball Academy pickleball venue in Sarawak.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Sarawak",
+      "lat": 2.2869019,
+      "lng": 111.8297322
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/iPSS%20Pickleball%20Academy/cm7zdh3a61l4o08akzsgax6lw/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/iPSS%20Pickleball%20Academy/cm7zdh3a61l4o08akzsgax6lw/select",
+    "status": "active"
+  },
+  {
+    "id": "ipss-pickleball-courts",
+    "name": "iPSS Pickleball Courts",
+    "slug": "ipss-pickleball-courts",
+    "description": "iPSS Pickleball Courts pickleball venue in Sarawak.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Sarawak",
+      "lat": 2.3309293,
+      "lng": 111.8406386
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/iPSS%20Pickleball%20Courts/clt55v5rr0am42vfpxxll36r9/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/iPSS%20Pickleball%20Courts/clt55v5rr0am42vfpxxll36r9/select",
+    "status": "active"
+  },
+  {
+    "id": "borneo-sports-arena",
+    "name": "BORNEO SPORTS ARENA",
+    "slug": "borneo-sports-arena",
+    "description": "BORNEO SPORTS ARENA pickleball venue in Sabah.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Sabah",
+      "lat": 5.98364,
+      "lng": 116.11705
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=491",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=491",
+    "status": "active"
+  },
+  {
+    "id": "olympia-badminton-arena",
+    "name": "Olympia Badminton Arena",
+    "slug": "olympia-badminton-arena",
+    "description": "Olympia Badminton Arena pickleball venue in Sabah.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Sabah",
+      "lat": 5.9966063,
+      "lng": 116.1228239
+    },
+    "contact": {
+      "website": "https://www.courtsite.my/centre/Olympia%20Badminton%20Arena/ckunyzv1t033m0gazyub8dxa4/select",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://www.courtsite.my/centre/Olympia%20Badminton%20Arena/ckunyzv1t033m0gazyub8dxa4/select",
+    "status": "active"
+  },
+  {
+    "id": "pickle-pod-inanam-capital",
+    "name": "Pickle Pod Inanam Capital",
+    "slug": "pickle-pod-inanam-capital",
+    "description": "Pickle Pod Inanam Capital pickleball venue in Sabah.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Sabah",
+      "lat": 5.98739,
+      "lng": 116.13121
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=453",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=453",
+    "status": "active"
+  },
+  {
+    "id": "calvary-crown-pickleball-badminton",
+    "name": "Calvary Crown Pickleball & Badminton",
+    "slug": "calvary-crown-pickleball-badminton",
+    "description": "Calvary Crown Pickleball & Badminton pickleball venue in Sabah.",
+    "category": "indoor",
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "Sabah",
+      "lat": 4.26118,
+      "lng": 117.90867
+    },
+    "contact": {
+      "website": "https://book.afa-sports.com/?auth=441",
+      "phone": ""
+    },
+    "amenities": [],
+    "courts": 1,
+    "price_range": "",
+    "source": "opencourt365.com.my",
+    "source_url": "https://book.afa-sports.com/?auth=441",
+    "status": "active"
   }
 ]
