@@ -4,55 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — PickleSpotMY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="/" class="logo">
-        <span class="logo-icon">🥒</span>
-        <span class="logo-text">PickleSpot<span class="logo-accent">MY</span></span>
-      </a>
-      <nav class="nav">
-        <a href="/">Home</a>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">🥒</span>
+      <span>PickleSpot<span class="brand-accent">MY</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="/" class="nav-link"><i class="fas fa-map-marked-alt"></i> Home</a>
+      <a href="/about.html" class="nav-link active"><i class="fas fa-info-circle"></i> About</a>
+      <a href="/contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+      <a href="/privacy.html" class="nav-link"><i class="fas fa-shield-alt"></i> Privacy</a>
+    </div>
+  </nav>
+
+  <section class="hero" style="padding:80px 20px 60px">
+    <div class="hero-content">
+      <span class="hero-badge">🇲🇾 About</span>
+      <h1>About PickleSpotMY</h1>
+      <p class="hero-sub">Malaysia's largest pickleball court directory — 493 venues across 14 states.</p>
+    </div>
+  </section>
+
+  <main style="max-width:720px;margin:0 auto;padding:40px 20px 60px">
+    <h2 style="font-size:22px;margin-bottom:12px;color:var(--primary)">What We Do</h2>
+    <p style="font-size:15px;line-height:1.8;color:#475569;margin-bottom:32px">PickleSpotMY aggregates pickleball venues across Malaysia into one searchable directory. We help players find available courts, check real-time slots, and discover new places to play — from Kuala Lumpur to Kota Kinabalu.</p>
+
+    <h2 style="font-size:22px;margin-bottom:12px;color:var(--primary)">Our Data</h2>
+    <p style="font-size:15px;line-height:1.8;color:#475569;margin-bottom:32px">We currently list <strong>493 venues</strong> across <strong>14 states</strong> and territories, sourced from OpenCourt365 (95 venues), PicklePadel.my (397 venues), and CourtOS (1 venue). Every venue includes location coordinates, contact info, and amenities where available.</p>
+
+    <h2 style="font-size:22px;margin-bottom:12px;color:var(--primary)">Real-Time Availability</h2>
+    <p style="font-size:15px;line-height:1.8;color:#475569;margin-bottom:32px">For venues integrated with OpenCourt365, you can search actual court availability by date and time — see open slots and prices without having to call around.</p>
+
+    <h2 style="font-size:22px;margin-bottom:12px;color:var(--primary)">Contact</h2>
+    <p style="font-size:15px;line-height:1.8;color:#475569;margin-bottom:32px">Questions, suggestions, or want to add your venue? <a href="/contact.html">Get in touch</a>.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span>🥒</span>
+        <span>PickleSpotMY</span>
+      </div>
+      <p class="footer-tagline">Finding pickleball courts in Malaysia made easy 🇲🇾</p>
+      <div class="footer-links">
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
         <a href="/privacy.html">Privacy</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>About PickleSpotMY</h1>
-        <p>Malaysia's largest pickleball court directory.</p>
       </div>
-    </section>
-
-    <section class="content-section">
-      <div class="container">
-        <div style="max-width:720px;margin:0 auto;padding:32px 0;">
-          <h2>What We Do</h2>
-          <p>PickleSpotMY aggregates pickleball venues across Malaysia into one searchable directory. We help players find available courts, check real-time slots, and discover new places to play — from Kuala Lumpur to Kota Kinabalu.</p>
-
-          <h2 style="margin-top:32px;">Our Data</h2>
-          <p>We currently list <strong>398 venues</strong> across <strong>14 states</strong> and territories, sourced from multiple platforms including OpenCourt365 and PicklePadel.my. Every venue includes location coordinates, contact info, and amenities where available.</p>
-
-          <h2 style="margin-top:32px;">Real-Time Availability</h2>
-          <p>For venues integrated with OpenCourt365, you can search actual court availability by date and time — see open slots and prices without having to call around.</p>
-
-          <h2 style="margin-top:32px;">Contact</h2>
-          <p>Questions, suggestions, or want to add your venue? <a href="/contact.html">Get in touch</a>.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>Data sourced from OpenCourt365, PicklePadel.my, and other platforms. Not affiliated with any listed venue.</p>
-      <p style="margin-top:8px;"><a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/privacy.html">Privacy</a></p>
+      <p class="footer-copy">&copy; 2026 PickleSpotMY &middot; All rights reserved</p>
     </div>
   </footer>
 </body>

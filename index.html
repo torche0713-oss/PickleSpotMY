@@ -3,56 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PickleSpotMY — Find Available Pickleball Courts</title>
+  <title>PickleSpotMY — Find Pickleball Courts in Malaysia</title>
+  <meta name="description" content="Find pickleball courts near you across Malaysia. 493+ venues in 14 states. Interactive map, availability search, and community-driven listings." />
+  <meta name="keywords" content="pickleball courts malaysia, pickleball MY, find pickleball court, pickleball KL, pickleball selangor, pickleball penang" />
+
+  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- AOS (scroll animations) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="/" class="logo">
-        <span class="logo-icon">🥒</span>
-        <span class="logo-text">PickleSpot<span class="logo-accent">MY</span></span>
-      </a>
-      <nav class="nav">
-        <a href="#search">Search</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-      </nav>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">🥒</span>
+      <span>PickleSpot<span class="brand-accent">MY</span></span>
     </div>
-  </header>
+    <div class="nav-links">
+      <a href="#" class="nav-link active" data-view="map">
+        <i class="fas fa-map-marked-alt"></i> Map
+      </a>
+      <a href="#" class="nav-link" data-view="list">
+        <i class="fas fa-list"></i> Courts
+      </a>
+      <a href="#" class="nav-link" data-view="directory">
+        <i class="fas fa-building"></i> Directory
+      </a>
+      <a href="about.html" class="nav-link">
+        <i class="fas fa-info-circle"></i> About
+      </a>
+      <a href="contact.html" class="nav-link">
+        <i class="fas fa-envelope"></i> Contact
+      </a>
+      <button class="btn-add-court" id="addCourtBtn">
+        <i class="fas fa-plus"></i> Add Court
+      </button>
+    </div>
+    <button class="nav-hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Find Available Pickleball Courts</h1>
-        <p>Search real-time court availability across Malaysia. Pick a date and time to see open slots.</p>
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" class="mobile-link" data-view="map"><i class="fas fa-map-marked-alt"></i> Map</a>
+    <a href="#" class="mobile-link" data-view="list"><i class="fas fa-list"></i> Courts</a>
+    <a href="#" class="mobile-link" data-view="directory"><i class="fas fa-building"></i> Directory</a>
+    <a href="about.html" class="mobile-link"><i class="fas fa-info-circle"></i> About</a>
+    <a href="contact.html" class="mobile-link"><i class="fas fa-envelope"></i> Contact</a>
+    <a href="#" class="mobile-link add" id="mobileAddCourt"><i class="fas fa-plus"></i> Add Court</a>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+      <div class="hero-logo-wrap"><span class="hero-logo">🥒</span></div>
+      <span class="hero-badge">🇲🇾 Find Your Court</span>
+      <h1><span class="gradient-text">Discover Pickleball Courts</span><br/>Across Malaysia</h1>
+      <div class="hero-sub-badge">🏓 Malaysia's Largest Pickleball Court Directory</div>
+      <p class="hero-sub">Browse indoor and outdoor courts by state, check availability, and find your next game — all in one place.</p>
+      <div class="hero-launch-notice">
+        <i class="fas fa-bullhorn"></i>
+        <span><strong>We just launched!</strong> We're building the largest pickleball court directory in Malaysia. <a href="#" onclick="showView('map');return false">Explore courts</a> or <a href="#" onclick="document.getElementById('addCourtBtn').click();return false">add yours</a> to help the community grow! 🏓🇲🇾</span>
       </div>
-    </section>
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+        <div class="hero-stat">
+          <span class="hero-stat-num" id="statVenues">493</span>
+          <span class="hero-stat-label">Venues Listed</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" id="statStates">14</span>
+          <span class="hero-stat-label">States</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" id="statSources">3</span>
+          <span class="hero-stat-label">Platforms</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <button class="btn-hero btn-hero-primary" onclick="showView('map')">
+          <i class="fas fa-search"></i> Find Courts
+        </button>
+        <button class="btn-hero btn-hero-secondary" id="heroAddBtn">
+          <i class="fas fa-plus"></i> Add a Court
+        </button>
+      </div>
+    </div>
+  </section>
 
-    <section id="search" class="search-section">
-      <div class="container">
-        <form id="search-form" class="search-form">
-          <div class="search-row">
-            <div class="field">
-              <label>State</label>
-              <select id="state-input">
-                <option value="">All States</option>
-              </select>
-            </div>
-            <div class="field">
-              <label>City</label>
-              <select id="city-input">
-                <option value="">Select a city...</option>
-              </select>
-              <input type="hidden" id="lat-input" value="3.139" />
-              <input type="hidden" id="lng-input" value="101.686" />
-            </div>
-            <div class="field">
-              <label>Date</label>
-              <input type="date" id="date-input" />
-            </div>
-            <div class="field">
+  <!-- ===== MAIN APP ===== -->
+  <div class="app-container" id="appContainer" style="display:none">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2><i class="fas fa-search"></i> Find Courts</h2>
+        <button class="sidebar-toggle" id="sidebarToggle">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+      </div>
+
+      <!-- Search Form -->
+      <div class="search-box">
+        <form id="search-form">
+          <div class="filter-group">
+            <label>State</label>
+            <select id="state-input">
+              <option value="">All States</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label>City</label>
+            <select id="city-input">
+              <option value="">Select a city...</option>
+            </select>
+            <input type="hidden" id="lat-input" value="3.139" />
+            <input type="hidden" id="lng-input" value="101.686" />
+          </div>
+          <div class="filter-group">
+            <label>Date</label>
+            <input type="date" id="date-input" style="width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:10px;font-size:13px;font-family:'Inter',sans-serif;outline:none;background:rgba(0,0,0,0.04);color:var(--text)" />
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <div class="filter-group">
               <label>From</label>
               <select id="start-time">
                 <option value="00:00">Any</option>
@@ -70,7 +150,7 @@
                 <option value="20:00">8:00 PM</option>
               </select>
             </div>
-            <div class="field">
+            <div class="filter-group">
               <label>To</label>
               <select id="end-time">
                 <option value="24:00">Any</option>
@@ -83,54 +163,234 @@
                 <option value="24:00" selected>Late</option>
               </select>
             </div>
-            <div class="field field-btn">
-              <label>&nbsp;</label>
-              <button type="submit" id="search-btn">Search Availability</button>
+          </div>
+          <button type="submit" class="btn-add-court" style="width:100%;justify-content:center;margin-top:4px">
+            <i class="fas fa-search"></i> Search Availability
+          </button>
+        </form>
+      </div>
+
+      <!-- Results Status -->
+      <div class="results-info">
+        <span id="resultsCount">0</span> venues found
+        <span id="search-status" style="margin-left:8px;font-size:11px;color:#94a3b8"></span>
+      </div>
+
+      <!-- Venue Results List -->
+      <div class="sidebar-court-list" id="results-list">
+        <div class="initial-msg" id="initial-msg">
+          <p style="padding:24px;text-align:center;font-size:13px;color:var(--text-muted)">Select a date and time to find available pickleball courts near you.</p>
+        </div>
+      </div>
+
+      <!-- Loading -->
+      <div id="loading" class="loading-state hidden">
+        <div class="spinner"></div>
+        <p>Searching for available courts...</p>
+      </div>
+
+      <div id="no-results" class="no-results hidden">
+        <p>No available courts found for this search. Try a different date or time.</p>
+      </div>
+    </aside>
+
+    <!-- ===== MAP VIEW ===== -->
+    <main class="main-content" id="mainContent">
+      <div id="map"></div>
+
+      <!-- Map Controls -->
+      <div class="map-controls">
+        <button class="map-btn" id="locateMe" title="Find my location">
+          <i class="fas fa-crosshairs"></i>
+        </button>
+        <button class="map-btn" id="toggleSidebar" title="Toggle sidebar">
+          <i class="fas fa-sliders-h"></i>
+        </button>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar" id="statsBar">
+        <div class="stat">
+          <span class="stat-number" id="totalCourts">0</span>
+          <span class="stat-label">Courts</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" id="totalCities">0</span>
+          <span class="stat-label">Cities</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" id="totalVenues">0</span>
+          <span class="stat-label">Venues</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ===== LIST VIEW ===== -->
+  <div class="list-view" id="listView" style="display:none">
+    <div class="list-header">
+      <h1>All Pickleball Venues in Malaysia</h1>
+      <p>Browse all <span id="listVenueCount">493</span> venues on PickleSpotMY</p>
+
+      <div class="list-search">
+        <i class="fas fa-search"></i>
+        <input type="text" id="listSearchInput" placeholder="Search venues..." />
+      </div>
+    </div>
+
+    <div class="courts-grid" id="courtsGrid">
+      <!-- Dynamically populated -->
+    </div>
+  </div>
+
+  <!-- ===== DIRECTORY SECTION ===== -->
+  <section class="directory-section" id="directorySection" style="display:none">
+    <div class="directory-header">
+      <h2><i class="fas fa-building"></i> Malaysia Venue Directory</h2>
+      <span id="directory-count" class="directory-count"></span>
+    </div>
+    <p class="directory-sub">Browse all pickleball venues across Malaysia. Click a state to expand.</p>
+    <div id="directory-list" class="directory-list"></div>
+  </section>
+
+  <!-- ===== COURT DETAIL MODAL ===== -->
+  <div class="modal-overlay" id="courtModal" style="display:none">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header" id="modalHeader"></div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer" id="modalFooter"></div>
+    </div>
+  </div>
+
+  <!-- ===== ADD COURT MODAL ===== -->
+  <div class="modal-overlay" id="addCourtModal" style="display:none">
+    <div class="modal modal-lg">
+      <button class="modal-close" id="addModalClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-header">
+        <h2><i class="fas fa-plus-circle"></i> Add a Court to PickleSpotMY</h2>
+        <p>Help the Malaysian pickleball community by adding a venue!</p>
+      </div>
+      <div class="modal-body">
+        <form id="addCourtForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Venue Name *</label>
+              <input type="text" id="courtName" placeholder="e.g. KL Sports Complex" required />
             </div>
           </div>
-        </form>
-        <div id="search-status" class="search-status"></div>
-      </div>
-    </section>
 
-    <section id="results" class="results-section">
-      <div class="container">
-        <div id="results-header" class="results-header hidden">
-          <h2>Available Courts</h2>
-          <span id="results-count"></span>
-        </div>
-        <div id="results-map" class="results-map"></div>
-        <div id="results-list" class="results-list"></div>
-        <div id="loading" class="loading-state hidden">
-          <div class="spinner"></div>
-          <p>Searching for available courts across platforms...</p>
-        </div>
-        <div id="no-results" class="no-results hidden">
-          <p>No available courts found for this search. Try a different date or time.</p>
-        </div>
-        <div id="initial-msg" class="initial-msg">
-          <p>Enter a date and time to find available pickleball courts near you.</p>
-        </div>
-        <div id="directory-section" class="directory-section">
-          <div class="directory-header">
-            <h2>Malaysia Venue Directory</h2>
-            <span id="directory-count" class="directory-count"></span>
+          <div class="form-row">
+            <div class="form-group">
+              <label>State *</label>
+              <select id="courtState" required>
+                <option value="">Select State</option>
+                <option value="Johor">Johor</option>
+                <option value="Kedah">Kedah</option>
+                <option value="Kelantan">Kelantan</option>
+                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                <option value="Labuan">Labuan</option>
+                <option value="Melaka">Melaka</option>
+                <option value="Negeri Sembilan">Negeri Sembilan</option>
+                <option value="Pahang">Pahang</option>
+                <option value="Perak">Perak</option>
+                <option value="Perlis">Perlis</option>
+                <option value="Penang">Penang</option>
+                <option value="Sabah">Sabah</option>
+                <option value="Sarawak">Sarawak</option>
+                <option value="Selangor">Selangor</option>
+                <option value="Terengganu">Terengganu</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>City</label>
+              <input type="text" id="courtCity" placeholder="e.g. Kuala Lumpur" />
+            </div>
           </div>
-          <p class="directory-sub">Browse pickleball venues across Malaysia. Click a state to expand.</p>
-          <div id="directory-list" class="directory-list"></div>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>Data sourced from OpenCourt365, PicklePadel.my, and other platforms. Not affiliated with any listed venue.</p>
-      <p style="margin-top:8px;"><a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/privacy.html">Privacy</a></p>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Court Type</label>
+              <select id="courtType">
+                <option value="">Select Type</option>
+                <option value="Indoor">Indoor</option>
+                <option value="Outdoor">Outdoor</option>
+                <option value="Covered">Covered</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Number of Courts</label>
+              <input type="number" id="courtCount" min="1" max="50" placeholder="e.g. 4" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Address / Location</label>
+            <textarea id="courtAddress" rows="2" placeholder="Full address or directions"></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Contact / Website</label>
+              <input type="text" id="courtContact" placeholder="Phone, website, or social media" />
+            </div>
+            <div class="form-group">
+              <label>Operating Hours</label>
+              <input type="text" id="courtHours" placeholder="e.g. Mon-Sun 6:00 AM - 10:00 PM" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Latitude</label>
+              <input type="number" id="courtLat" step="any" placeholder="e.g. 3.139" />
+            </div>
+            <div class="form-group">
+              <label>Longitude</label>
+              <input type="number" id="courtLng" step="any" placeholder="e.g. 101.686" />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn-cancel" id="cancelAdd">Cancel</button>
+            <button type="submit" class="btn-submit">
+              <i class="fas fa-paper-plane"></i> Submit Venue
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span>🥒</span>
+        <span>PickleSpotMY</span>
+      </div>
+      <p class="footer-tagline">Finding pickleball courts in Malaysia made easy 🇲🇾</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 PickleSpotMY &middot; All rights reserved</p>
+      <p style="font-size:11px;color:#94a3b8;margin-top:6px">Data sourced from OpenCourt365, PicklePadel.my, and other platforms.</p>
     </div>
   </footer>
 
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true, offset: 80 });</script>
   <script src="js/app.js"></script>
 </body>
 </html>

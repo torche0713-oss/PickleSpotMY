@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
       results = results.filter(v => v.location.city?.toLowerCase() === city.toLowerCase());
     }
 
-    const lmt = Math.min(parseInt(limit) || 50, 398);
+    const lmt = Math.min(parseInt(limit) || 50, 500);
     results = results.slice(0, lmt);
 
     const summary = results.map(v => ({

@@ -5,6 +5,7 @@
   let mapMarkers = [];
   let searchResults = null;
   let allLocations = [];
+  let allCourtsData = [];
 
   const elements = {
     form: document.getElementById('search-form'),
@@ -16,28 +17,164 @@
     startTime: document.getElementById('start-time'),
     endTime: document.getElementById('end-time'),
     searchStatus: document.getElementById('search-status'),
-    resultsHeader: document.getElementById('results-header'),
-    resultsCount: document.getElementById('results-count'),
-    resultsMap: document.getElementById('results-map'),
     resultsList: document.getElementById('results-list'),
+    resultsCount: document.getElementById('resultsCount'),
     loading: document.getElementById('loading'),
     noResults: document.getElementById('no-results'),
     initialMsg: document.getElementById('initial-msg'),
+    map: document.getElementById('map'),
+    listView: document.getElementById('listView'),
+    courtsGrid: document.getElementById('courtsGrid'),
+    directorySection: document.getElementById('directorySection'),
+    directoryList: document.getElementById('directory-list'),
+    directoryCount: document.getElementById('directory-count'),
+    appContainer: document.getElementById('appContainer'),
+    hamburger: document.getElementById('hamburger'),
+    mobileMenu: document.getElementById('mobileMenu'),
+    sidebar: document.getElementById('sidebar'),
+    sidebarToggle: document.getElementById('sidebarToggle'),
+    locateMe: document.getElementById('locateMe'),
+    toggleSidebar: document.getElementById('toggleSidebar'),
+    totalCourts: document.getElementById('totalCourts'),
+    totalCities: document.getElementById('totalCities'),
+    totalVenues: document.getElementById('totalVenues'),
+    addCourtBtn: document.getElementById('addCourtBtn'),
+    heroAddBtn: document.getElementById('heroAddBtn'),
+    mobileAddCourt: document.getElementById('mobileAddCourt'),
+    addCourtModal: document.getElementById('addCourtModal'),
+    addModalClose: document.getElementById('addModalClose'),
+    cancelAdd: document.getElementById('cancelAdd'),
+    addCourtForm: document.getElementById('addCourtForm'),
+    courtModal: document.getElementById('courtModal'),
+    modalClose: document.getElementById('modalClose'),
+    modalHeader: document.getElementById('modalHeader'),
+    modalBody: document.getElementById('modalBody'),
+    modalFooter: document.getElementById('modalFooter'),
+    listSearchInput: document.getElementById('listSearchInput'),
+    listVenueCount: document.getElementById('listVenueCount'),
+    toast: document.getElementById('toast'),
   };
 
   function init() {
     const today = new Date().toISOString().split('T')[0];
-    elements.dateInput.value = today;
-    elements.form.addEventListener('submit', onSearch);
-    elements.stateInput.addEventListener('change', onStateChange);
-    elements.cityInput.addEventListener('change', onCityChange);
+    if (elements.dateInput) elements.dateInput.value = today;
+    if (elements.form) elements.form.addEventListener('submit', onSearch);
+    if (elements.stateInput) elements.stateInput.addEventListener('change', onStateChange);
+    if (elements.cityInput) elements.cityInput.addEventListener('change', onCityChange);
+
+    setupNav();
+    setupModals();
+    setupSidebar();
+    setupMapControls();
+
     loadLocations();
     loadDirectory();
+    loadAllVenues();
+  }
+
+  function setupNav() {
+    if (elements.hamburger) {
+      elements.hamburger.addEventListener('click', function () {
+        elements.mobileMenu.classList.toggle('open');
+      });
+    }
+    document.querySelectorAll('[data-view]').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        var view = el.dataset.view;
+        showView(view);
+        elements.mobileMenu.classList.remove('open');
+      });
+    });
+  }
+
+  function showView(view) {
+    var isMap = view === 'map';
+    var isList = view === 'list';
+    var isDir = view === 'directory';
+
+    elements.appContainer.style.display = isMap ? 'flex' : 'none';
+    elements.listView.style.display = isList ? 'block' : 'none';
+    elements.directorySection.style.display = isDir ? 'block' : 'none';
+
+    if (isMap && map) setTimeout(function () { map.invalidateSize(); }, 100);
+
+    document.querySelectorAll('.nav-link[data-view]').forEach(function (el) {
+      el.classList.toggle('active', el.dataset.view === view);
+    });
+  }
+  window.showView = showView;
+
+  function setupModals() {
+    function openAddModal() {
+      elements.addCourtModal.style.display = 'flex';
+    }
+    function closeAddModal() {
+      elements.addCourtModal.style.display = 'none';
+    }
+    function openCourtModal() { /* populated dynamically */ }
+
+    if (elements.addCourtBtn) elements.addCourtBtn.addEventListener('click', openAddModal);
+    if (elements.heroAddBtn) elements.heroAddBtn.addEventListener('click', openAddModal);
+    if (elements.mobileAddCourt) elements.mobileAddCourt.addEventListener('click', function (e) {
+      e.preventDefault();
+      openAddModal();
+      elements.mobileMenu.classList.remove('open');
+    });
+    if (elements.addModalClose) elements.addModalClose.addEventListener('click', closeAddModal);
+    if (elements.cancelAdd) elements.cancelAdd.addEventListener('click', closeAddModal);
+    if (elements.modalClose) elements.modalClose.addEventListener('click', function () {
+      elements.courtModal.style.display = 'none';
+    });
+    if (elements.addCourtForm) {
+      elements.addCourtForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        showToast('Venue submitted! We\'ll review it shortly.');
+        closeAddModal();
+        elements.addCourtForm.reset();
+      });
+    }
+    [elements.addCourtModal, elements.courtModal].forEach(function (modal) {
+      if (modal) modal.addEventListener('click', function (e) {
+        if (e.target === modal) modal.style.display = 'none';
+      });
+    });
+  }
+
+  function setupSidebar() {
+    if (elements.sidebarToggle) {
+      elements.sidebarToggle.addEventListener('click', function () {
+        elements.sidebar.classList.toggle('collapsed');
+        if (map) setTimeout(function () { map.invalidateSize(); }, 300);
+      });
+    }
+  }
+
+  function setupMapControls() {
+    if (elements.toggleSidebar) {
+      elements.toggleSidebar.addEventListener('click', function () {
+        elements.sidebar.classList.toggle('collapsed');
+        if (map) setTimeout(function () { map.invalidateSize(); }, 300);
+      });
+    }
+    if (elements.locateMe) {
+      elements.locateMe.addEventListener('click', function () {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function (pos) {
+            if (map) map.setView([pos.coords.latitude, pos.coords.longitude], 13);
+          }, function () {
+            showToast('Unable to find your location.');
+          });
+        } else {
+          showToast('Geolocation not supported.');
+        }
+      });
+    }
   }
 
   async function loadLocations() {
     try {
-      const res = await fetch('/api/locations');
+      var res = await fetch('/api/locations');
       allLocations = await res.json();
       populateStates();
     } catch (e) {
@@ -46,36 +183,36 @@
   }
 
   function populateStates() {
-    const seen = {};
-    const stateOpts = [{ value: '', label: 'All States' }];
-    allLocations.forEach(l => {
+    if (!elements.stateInput) return;
+    var seen = {};
+    var stateOpts = [{ value: '', label: 'All States' }];
+    allLocations.forEach(function (l) {
       if (!seen[l.state]) {
         seen[l.state] = true;
         stateOpts.push({ value: l.state, label: l.state });
       }
     });
-    stateOpts.sort((a, b) => a.label.localeCompare(b.label));
+    stateOpts.sort(function (a, b) { return a.label.localeCompare(b.label); });
     if (stateOpts.length > 1 && stateOpts[0].value === '') {
-      const all = stateOpts.shift();
+      var all = stateOpts.shift();
       stateOpts.unshift(all);
     }
-    elements.stateInput.innerHTML = stateOpts.map(s =>
-      `<option value="${s.value}">${s.label}</option>`
-    ).join('');
+    elements.stateInput.innerHTML = stateOpts.map(function (s) {
+      return '<option value="' + s.value + '">' + s.label + '</option>';
+    }).join('');
     populateCities();
   }
 
   function populateCities() {
-    const state = elements.stateInput.value;
-    let cities = allLocations;
-    if (state) {
-      cities = cities.filter(l => l.state === state);
-    }
-    cities = cities.sort((a, b) => a.sortOrder - b.sortOrder);
+    if (!elements.cityInput) return;
+    var state = elements.stateInput.value;
+    var cities = allLocations;
+    if (state) cities = cities.filter(function (l) { return l.state === state; });
+    cities = cities.sort(function (a, b) { return a.sortOrder - b.sortOrder; });
 
-    let html = '<option value="">Select a city...</option>';
-    cities.forEach(l => {
-      html += `<option value="${l.city}" data-lat="${l.latitude}" data-lng="${l.longitude}" data-state="${l.state}">${l.city}${!state ? ', ' + l.state : ''}</option>`;
+    var html = '<option value="">Select a city...</option>';
+    cities.forEach(function (l) {
+      html += '<option value="' + l.city + '" data-lat="' + l.latitude + '" data-lng="' + l.longitude + '" data-state="' + l.state + '">' + l.city + (!state ? ', ' + l.state : '') + '</option>';
     });
     elements.cityInput.innerHTML = html;
   }
@@ -85,7 +222,8 @@
   }
 
   function onCityChange() {
-    const opt = elements.cityInput.options[elements.cityInput.selectedIndex];
+    if (!elements.cityInput) return;
+    var opt = elements.cityInput.options[elements.cityInput.selectedIndex];
     if (opt && opt.value) {
       elements.latInput.value = opt.dataset.lat;
       elements.lngInput.value = opt.dataset.lng;
@@ -94,28 +232,28 @@
 
   async function onSearch(e) {
     e.preventDefault();
-    const lat = parseFloat(elements.latInput.value) || 3.139;
-    const lng = parseFloat(elements.lngInput.value) || 101.686;
-    const date = elements.dateInput.value;
-    const startTime = elements.startTime.value;
-    const endTime = elements.endTime.value;
+    var lat = parseFloat(elements.latInput.value) || 3.139;
+    var lng = parseFloat(elements.lngInput.value) || 101.686;
+    var date = elements.dateInput.value;
+    var startTime = elements.startTime.value;
+    var endTime = elements.endTime.value;
 
     if (!date) {
-      elements.searchStatus.textContent = 'Please select a date.';
+      if (elements.searchStatus) elements.searchStatus.textContent = 'Please select a date.';
       return;
     }
 
-    setLoading(true, 'Searching for venues with pickleball courts...');
-    elements.searchStatus.textContent = 'Searching venues...';
+    setLoading(true, 'Searching for venues...');
+    if (elements.searchStatus) elements.searchStatus.textContent = 'Searching venues...';
 
     try {
-      const params = new URLSearchParams({ lat, lng });
-      const res = await fetch(`/api/search?${params}`);
-      const data = await res.json();
+      var params = new URLSearchParams({ lat: lat, lng: lng });
+      var res = await fetch('/api/search?' + params.toString());
+      var data = await res.json();
 
       if (!data.venues || data.venues.length === 0) {
-        elements.noResults.classList.remove('hidden');
-        elements.searchStatus.textContent = 'No pickleball venues found in this area.';
+        if (elements.noResults) elements.noResults.classList.remove('hidden');
+        if (elements.searchStatus) elements.searchStatus.textContent = 'No pickleball venues found in this area.';
         setLoading(false);
         return;
       }
@@ -123,11 +261,11 @@
       searchResults = data;
       displayVenues(data.venues, date, startTime, endTime);
       renderMap(data.venues);
-      elements.searchStatus.textContent = `${data.venues.length} venue(s) found. Checking availability...`;
+      if (elements.searchStatus) elements.searchStatus.textContent = data.venues.length + ' venue(s) found. Checking availability...';
 
       await checkAvailabilityForVenues(data.venues, date, startTime, endTime);
     } catch (err) {
-      elements.searchStatus.textContent = 'Search failed. Please try again.';
+      if (elements.searchStatus) elements.searchStatus.textContent = 'Search failed. Please try again.';
       console.error(err);
     } finally {
       setLoading(false);
@@ -135,67 +273,80 @@
   }
 
   function setLoading(v, msg) {
-    elements.loading.classList.toggle('hidden', !v);
-    elements.initialMsg.classList.add('hidden');
-    elements.noResults.classList.add('hidden');
-    elements.resultsHeader.classList.add('hidden');
-    if (msg) elements.loading.querySelector('p').textContent = msg;
+    if (elements.loading) elements.loading.classList.toggle('hidden', !v);
+    if (elements.initialMsg) elements.initialMsg.classList.add('hidden');
+    if (elements.noResults) elements.noResults.classList.add('hidden');
+    if (msg && elements.loading) elements.loading.querySelector('p').textContent = msg;
   }
 
   function displayVenues(venues, date, startTime, endTime) {
-    elements.resultsHeader.classList.remove('hidden');
-    elements.resultsCount.textContent = `${venues.length} venue(s)`;
-    elements.initialMsg.classList.add('hidden');
+    if (elements.initialMsg) elements.initialMsg.classList.add('hidden');
+    if (elements.resultsCount) elements.resultsCount.textContent = venues.length;
 
-    const list = elements.resultsList;
-    list.innerHTML = venues.map(v => `
-      <div class="venue-group" data-venue-id="${v.id}">
-        <div class="venue-header" onclick="this.closest('.venue-group').classList.toggle('expanded')">
-          <div>
-            <h3>${v.name}</h3>
-            <div class="venue-meta">${v.city || ''} ${v.state || ''}  ·  ${v.totalCourts} court${v.totalCourts > 1 ? 's' : ''}  ·  ${v.sourceType || 'external'}</div>
-          </div>
-          <div>
-            <span class="venue-status-badge">Checking...</span>
-          </div>
-        </div>
-        <div class="venue-courts" id="courts-${v.id}">
-          <div style="padding:16px;text-align:center;color:var(--gray-500);font-size:0.85rem;">Loading availability...</div>
-        </div>
-        <div class="venue-gear">
-          <div class="gear-toggle" onclick="event.stopPropagation();this.closest('.venue-gear').classList.toggle('open')">
-            <span>🏸 Pickleball Gear</span>
-            <span class="gear-arrow">▸</span>
-          </div>
-          <div class="gear-content">
-            <a href="https://shopee.com.my/search?keyword=pickleball+paddle" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Paddles</a>
-            <a href="https://shopee.com.my/search?keyword=pickleball+balls+outdoor" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Balls</a>
-            <a href="https://shopee.com.my/search?keyword=portable+pickleball+net" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Nets</a>
-            <a href="https://shopee.com.my/search?keyword=pickleball+shoes+court" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Shoes</a>
-            <a href="https://shopee.com.my/search?keyword=pickleball+bag" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Bags</a>
-            <span class="gear-disclaimer">We may earn a commission from purchases.</span>
-          </div>
-        </div>
-      </div>
-    `).join('');
+    var list = elements.resultsList;
+    if (!list) return;
+
+    list.innerHTML = venues.map(function (v) {
+      return '<div class="venue-group" data-venue-id="' + v.id + '">' +
+        '<div class="venue-header" onclick="this.closest(\'.venue-group\').classList.toggle(\'expanded\')">' +
+          '<div>' +
+            '<h3>' + escapeHtml(v.name) + '</h3>' +
+            '<div class="venue-meta">' + (v.city || '') + ' ' + (v.state || '') + ' &middot; ' + (v.totalCourts || '?') + ' court' + ((v.totalCourts || 0) > 1 ? 's' : '') + ' &middot; ' + (v.sourceType || 'external') + '</div>' +
+          '</div>' +
+          '<div>' +
+            '<span class="venue-status-badge">Checking...</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="venue-courts" id="courts-' + v.id + '">' +
+          '<div style="padding:16px;text-align:center;color:#64748b;font-size:13px;">Loading availability...</div>' +
+        '</div>' +
+        '<div class="venue-gear">' +
+          '<div class="gear-toggle" onclick="event.stopPropagation();this.closest(\'.venue-gear\').classList.toggle(\'open\')">' +
+            '<span><i class="fas fa-shopping-cart"></i> Pickleball Gear</span>' +
+            '<span class="gear-arrow">&#9656;</span>' +
+          '</div>' +
+          '<div class="gear-content">' +
+            '<a href="https://shopee.com.my/search?keyword=pickleball+paddle" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Paddles</a>' +
+            '<a href="https://shopee.com.my/search?keyword=pickleball+balls+outdoor" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Balls</a>' +
+            '<a href="https://shopee.com.my/search?keyword=portable+pickleball+net" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Nets</a>' +
+            '<a href="https://shopee.com.my/search?keyword=pickleball+shoes+court" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Shoes</a>' +
+            '<a href="https://shopee.com.my/search?keyword=pickleball+bag" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Bags</a>' +
+            '<span class="gear-disclaimer">We may earn a commission from purchases.</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
   async function checkAvailabilityForVenues(venues, date, startTime, endTime) {
-    for (const venue of venues) {
-      const courtIds = venue.courts.map(c => c.id).filter(Boolean);
+    for (var i = 0; i < venues.length; i++) {
+      var venue = venues[i];
+      var courtIds = (venue.courts || []).map(function (c) { return c.id; }).filter(Boolean);
       if (courtIds.length === 0) {
         updateVenueStatus(venue.id, 'No bookable courts', '');
         continue;
       }
 
-      updateVenueStatus(venue.id, `Checking ${courtIds.length} courts...`, '');
+      updateVenueStatus(venue.id, 'Checking ' + courtIds.length + ' courts...', '');
 
       try {
-        const lat = parseFloat(elements.latInput.value) || 3.139;
-        const lng = parseFloat(elements.lngInput.value) || 101.686;
-        const params = new URLSearchParams({ courtIds: courtIds.join(','), date, startTime, endTime, lat, lng });
-        const res = await fetch(`/api/availability?${params}`);
-        const data = await res.json();
+        var lat = parseFloat(elements.latInput.value) || 3.139;
+        var lng = parseFloat(elements.lngInput.value) || 101.686;
+        var params = new URLSearchParams({
+          courtIds: courtIds.join(','),
+          date: date,
+          startTime: startTime,
+          endTime: endTime,
+          lat: lat,
+          lng: lng
+        });
+        var res = await fetch('/api/availability?' + params.toString());
+        var data = await res.json();
         renderVenueAvailability(venue.id, data.sessions || [], venue);
       } catch (err) {
         updateVenueStatus(venue.id, 'Unavailable', '');
@@ -204,114 +355,201 @@
   }
 
   function updateVenueStatus(venueId, text, countText) {
-    const badge = document.querySelector(`[data-venue-id="${venueId}"] .venue-status-badge`);
+    var badge = document.querySelector('[data-venue-id="' + venueId + '"] .venue-status-badge');
     if (badge) badge.textContent = text;
   }
 
   function renderVenueAvailability(venueId, sessions, venue) {
-    const container = document.getElementById(`courts-${venueId}`);
+    var container = document.getElementById('courts-' + venueId);
     if (!container) return;
 
     if (!sessions || sessions.length === 0) {
-      container.innerHTML = '<div style="padding:16px;text-align:center;color:var(--gray-500);font-size:0.85rem;">No available time slots for this date.</div>';
+      container.innerHTML = '<div style="padding:16px;text-align:center;color:#64748b;font-size:13px;">No available time slots for this date.</div>';
       updateVenueStatus(venueId, 'No slots', '');
       return;
     }
 
-    const url = venue.bookingUrl || '';
-    const availableSessions = sessions.filter(s => s.isAvailable !== false);
+    var url = venue.bookingUrl || '';
+    var availableSessions = sessions.filter(function (s) { return s.isAvailable !== false; });
 
-    container.innerHTML = availableSessions.slice(0, 30).map(s => `
-      <div class="session-card">
-        <div>
-          <div class="session-time">${s.startTime || ''} — ${s.endTime || ''}</div>
-          <div style="font-size:0.8rem;color:var(--gray-500);">${s.courtName || venue.name || ''}</div>
-        </div>
-        <div style="display:flex;align-items:center;gap:12px;">
-          ${s.price ? `<span class="session-price">RM ${s.price}</span>` : ''}
-          ${url ? `<a href="${url}" target="_blank" class="session-book">Book</a>` : ''}
-        </div>
-      </div>
-    `).join('');
+    container.innerHTML = availableSessions.slice(0, 30).map(function (s) {
+      return '<div class="session-card">' +
+        '<div>' +
+          '<div class="session-time">' + (s.startTime || '') + ' &mdash; ' + (s.endTime || '') + '</div>' +
+          '<div style="font-size:12px;color:#64748b;">' + (s.courtName || venue.name || '') + '</div>' +
+        '</div>' +
+        '<div style="display:flex;align-items:center;gap:12px;">' +
+          (s.price ? '<span class="session-price">RM ' + s.price + '</span>' : '') +
+          (url ? '<a href="' + url + '" target="_blank" class="session-book">Book</a>' : '') +
+        '</div>' +
+      '</div>';
+    }).join('');
 
     if (availableSessions.length > 30) {
-      container.innerHTML += `<p style="padding:8px;text-align:center;font-size:0.8rem;color:var(--gray-500);">+${availableSessions.length - 30} more slots</p>`;
+      container.innerHTML += '<p style="padding:8px;text-align:center;font-size:12px;color:#64748b;">+' + (availableSessions.length - 30) + ' more slots</p>';
     }
 
-    updateVenueStatus(venueId, `${availableSessions.length} slot${availableSessions.length > 1 ? 's' : ''}`, '');
+    updateVenueStatus(venueId, availableSessions.length + ' slot' + (availableSessions.length > 1 ? 's' : ''), '');
   }
 
   function renderMap(venues) {
     if (!map) {
-      map = L.map('results-map').setView([3.8, 109.5], 5);
+      if (!elements.map) return;
+      map = L.map('map').setView([3.8, 109.5], 5);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
       }).addTo(map);
     }
 
-    mapMarkers.forEach(m => map.removeLayer(m));
+    mapMarkers.forEach(function (m) { map.removeLayer(m); });
     mapMarkers = [];
 
-    const bounds = [];
-    venues.forEach(v => {
-      const lat = parseFloat(v.latitude);
-      const lng = parseFloat(v.longitude);
+    var bounds = [];
+    venues.forEach(function (v) {
+      var lat = parseFloat(v.latitude);
+      var lng = parseFloat(v.longitude);
       if (!lat || !lng) return;
 
-      const marker = L.marker([lat, lng]).addTo(map);
-      marker.bindPopup(`<h3>${v.name}</h3><p>${v.city || ''} ${v.state || ''}</p><p>${v.totalCourts} courts</p>`);
+      var icon = L.divIcon({
+        className: 'custom-marker',
+        iconSize: [14, 14]
+      });
+      var marker = L.marker([lat, lng], { icon: icon }).addTo(map);
+      marker.bindPopup(
+        '<div class="popup-header"><div class="popup-name">' + escapeHtml(v.name) + '</div><div class="popup-location">' + (v.city || '') + ' ' + (v.state || '') + '</div></div>' +
+        '<div class="popup-body">' +
+          '<div class="popup-detail"><i class="fas fa-map-pin"></i> ' + (v.totalCourts || '?') + ' court(s)</div>' +
+          '<div class="popup-detail"><i class="fas fa-tag"></i> ' + (v.sourceType || 'external') + '</div>' +
+          (v.bookingUrl ? '<a href="' + v.bookingUrl + '" target="_blank" class="popup-btn"><i class="fas fa-calendar-check"></i> Book Now</a>' : '') +
+        '</div>'
+      );
       mapMarkers.push(marker);
       bounds.push([lat, lng]);
     });
 
     if (bounds.length > 0) map.fitBounds(bounds, { padding: [50, 50] });
+    updateStats(venues);
+  }
+
+  function updateStats(venues) {
+    var venueSet = {};
+    var citySet = {};
+    var totalCourts = 0;
+    venues.forEach(function (v) {
+      venueSet[v.id || v.name] = true;
+      if (v.city) citySet[v.city] = true;
+      totalCourts += parseInt(v.totalCourts) || 0;
+    });
+    if (elements.totalVenues) elements.totalVenues.textContent = Object.keys(venueSet).length;
+    if (elements.totalCities) elements.totalCities.textContent = Object.keys(citySet).length;
+    if (elements.totalCourts) elements.totalCourts.textContent = totalCourts || Object.keys(venueSet).length;
   }
 
   async function loadDirectory() {
     try {
-      const res = await fetch('/api/directory?limit=398');
-      const data = await res.json();
-      const container = document.getElementById('directory-list');
-      const countEl = document.getElementById('directory-count');
+      var res = await fetch('/api/directory?limit=500');
+      var data = await res.json();
+      var container = elements.directoryList;
+      var countEl = elements.directoryCount;
       if (!container) return;
 
-      countEl.textContent = `${data.total} venues`;
+      countEl.textContent = data.total + ' venues';
 
-      const sortedStates = (data.states || []).sort((a, b) => b.count - a.count);
+      var sortedStates = (data.states || []).sort(function (a, b) { return b.count - a.count; });
 
-      container.innerHTML = sortedStates.map(s => `
-        <div class="dir-state-group">
-          <div class="dir-state-header" onclick="this.closest('.dir-state-group').classList.toggle('dir-open')">
-            <span class="dir-state-name">${s.name}</span>
-            <span class="dir-state-count">${s.count} venues</span>
-            <span class="dir-arrow">▸</span>
-          </div>
-          <div class="dir-state-venues" id="dir-${s.name.replace(/\s+/g, '-')}">
-            <div style="padding:12px;text-align:center;color:var(--gray-500);font-size:0.85rem;">Loading...</div>
-          </div>
-        </div>
-      `).join('');
+      container.innerHTML = sortedStates.map(function (s) {
+        return '<div class="dir-state-group">' +
+          '<div class="dir-state-header" onclick="this.closest(\'.dir-state-group\').classList.toggle(\'dir-open\')">' +
+            '<span class="dir-state-name">' + escapeHtml(s.name) + '</span>' +
+            '<span class="dir-state-count">' + s.count + ' venues</span>' +
+            '<span class="dir-arrow">&#9656;</span>' +
+          '</div>' +
+          '<div class="dir-state-venues" id="dir-' + s.name.replace(/\s+/g, '-') + '">' +
+            '<div style="padding:12px;text-align:center;color:#64748b;font-size:13px;">Loading...</div>' +
+          '</div>' +
+        '</div>';
+      }).join('');
 
-      // Load venues per state
-      data.states.forEach(s => {
-        fetch(`/api/directory?state=${encodeURIComponent(s.name)}&limit=200`)
-          .then(r => r.json())
-          .then(d => {
-            const el = document.getElementById(`dir-${s.name.replace(/\s+/g, '-')}`);
+      data.states.forEach(function (s) {
+        fetch('/api/directory?state=' + encodeURIComponent(s.name) + '&limit=200')
+          .then(function (r) { return r.json(); })
+          .then(function (d) {
+            var el = document.getElementById('dir-' + s.name.replace(/\s+/g, '-'));
             if (!el) return;
-            el.innerHTML = d.venues.map(v => `
-              <a href="https://picklepadel.my/en/venues/${v.slug}" target="_blank" class="dir-venue-item" rel="noopener">
-                <span class="dir-venue-name">${v.name}</span>
-                <span class="dir-venue-city">${v.city || ''} ${v.courts ? '· ' + v.courts + ' courts' : ''}</span>
-              </a>
-            `).join('');
+            el.innerHTML = d.venues.map(function (v) {
+              return '<a href="https://picklepadel.my/en/venues/' + (v.slug || '') + '" target="_blank" class="dir-venue-item" rel="noopener">' +
+                '<span class="dir-venue-name">' + escapeHtml(v.name) + '</span>' +
+                '<span class="dir-venue-city">' + (v.city || '') + (v.courts ? ' &middot; ' + v.courts + ' courts' : '') + '</span>' +
+              '</a>';
+            }).join('');
           })
-          .catch(() => {});
+          .catch(function () {});
       });
     } catch (e) {
       console.error('Failed to load directory', e);
     }
   }
+
+  async function loadAllVenues() {
+    try {
+      var res = await fetch('/api/directory?limit=500');
+      var data = await res.json();
+      allCourtsData = [];
+      var promises = (data.states || []).map(function (s) {
+        return fetch('/api/directory?state=' + encodeURIComponent(s.name) + '&limit=200')
+          .then(function (r) { return r.json(); })
+          .then(function (d) { allCourtsData = allCourtsData.concat(d.venues || []); })
+          .catch(function () {});
+      });
+      await Promise.all(promises);
+      populateListView(allCourtsData);
+    } catch (e) {
+      console.error('Failed to load all venues', e);
+    }
+  }
+
+  function populateListView(venues) {
+    var grid = elements.courtsGrid;
+    if (!grid) return;
+    if (elements.listVenueCount) elements.listVenueCount.textContent = venues.length;
+
+    grid.innerHTML = venues.map(function (v) {
+      return '<div class="court-card" onclick="showView(\'map\')">' +
+        '<div class="court-card-header">' +
+          '<div class="court-card-name">' + escapeHtml(v.name) + '</div>' +
+          '<div class="court-card-location"><i class="fas fa-map-marker-alt"></i> ' + (v.city || '') + ', ' + (v.state || '') + '</div>' +
+        '</div>' +
+        '<div class="court-card-body">' +
+          '<div class="court-detail-row"><i class="fas fa-info-circle"></i> ' + (v.courts || '?') + ' court' + ((v.courts || 0) > 1 ? 's' : '') + '</div>' +
+          (v.phone ? '<div class="court-detail-row"><i class="fas fa-phone"></i> ' + escapeHtml(v.phone) + '</div>' : '') +
+          '<div class="court-card-tags"><span class="tag tag-indoor">Venue</span></div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+
+    // Live search for list view
+    if (elements.listSearchInput) {
+      elements.listSearchInput.addEventListener('input', function () {
+        var q = this.value.toLowerCase();
+        var cards = grid.querySelectorAll('.court-card');
+        cards.forEach(function (card) {
+          var name = card.querySelector('.court-card-name');
+          var loc = card.querySelector('.court-card-location');
+          var text = (name ? name.textContent : '') + ' ' + (loc ? loc.textContent : '');
+          card.style.display = text.toLowerCase().indexOf(q) > -1 ? '' : 'none';
+        });
+      });
+    }
+  }
+
+  function showToast(msg) {
+    var t = elements.toast;
+    if (!t) return;
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(function () { t.classList.remove('show'); }, 3000);
+  }
+  window.showToast = showToast;
 
   document.addEventListener('DOMContentLoaded', init);
 })();
