@@ -5,15 +5,13 @@
   let mapMarkers = [];
   let searchResults = null;
   let allLocations = [];
-  let activeIdx = -1;
 
   const elements = {
     form: document.getElementById('search-form'),
-    locationInput: document.getElementById('location-input'),
+    stateInput: document.getElementById('state-input'),
+    cityInput: document.getElementById('city-input'),
     latInput: document.getElementById('lat-input'),
     lngInput: document.getElementById('lng-input'),
-    stateInput: document.getElementById('state-input'),
-    suggestions: document.getElementById('location-suggestions'),
     dateInput: document.getElementById('date-input'),
     startTime: document.getElementById('start-time'),
     endTime: document.getElementById('end-time'),
@@ -31,12 +29,9 @@
     const today = new Date().toISOString().split('T')[0];
     elements.dateInput.value = today;
     elements.form.addEventListener('submit', onSearch);
-    loadLocations();
-    elements.locationInput.addEventListener('input', onLocationInput);
-    elements.locationInput.addEventListener('blur', onLocationBlur);
-    elements.locationInput.addEventListener('keydown', onLocationKeydown);
     elements.stateInput.addEventListener('change', onStateChange);
-    document.addEventListener('click', onDocClick);
+    elements.cityInput.addEventListener('change', onCityChange);
+    loadLocations();
   }
 
   async function loadLocations() {
@@ -58,104 +53,43 @@
         stateOpts.push({ value: l.state, label: l.state });
       }
     });
-    stateOpts.sort((a, b) => {
-      if (!a.value) return -1;
-      if (!b.value) return 1;
-      return a.label.localeCompare(b.label);
-    });
+    stateOpts.sort((a, b) => a.label.localeCompare(b.label));
+    if (stateOpts.length > 1 && stateOpts[0].value === '') {
+      const all = stateOpts.shift();
+      stateOpts.unshift(all);
+    }
     elements.stateInput.innerHTML = stateOpts.map(s =>
       `<option value="${s.value}">${s.label}</option>`
     ).join('');
+    populateCities();
   }
 
-  function getFilteredLocations() {
-    const q = elements.locationInput.value.toLowerCase().trim();
+  function populateCities() {
     const state = elements.stateInput.value;
-    return allLocations.filter(l => {
-      if (state && l.state !== state) return false;
-      if (!q) return true;
-      return l.city.toLowerCase().includes(q) || l.state.toLowerCase().includes(q);
-    }).sort((a, b) => a.sortOrder - b.sortOrder).slice(0, 10);
-  }
-
-  function onLocationInput() {
-    const filtered = getFilteredLocations();
-    activeIdx = -1;
-    if (!elements.locationInput.value.trim() || filtered.length === 0) {
-      elements.suggestions.classList.remove('show');
-      return;
+    let cities = allLocations;
+    if (state) {
+      cities = cities.filter(l => l.state === state);
     }
-    elements.suggestions.innerHTML = filtered.map((l, i) =>
-      `<div class="suggestion-item" data-idx="${i}" data-lat="${l.latitude}" data-lng="${l.longitude}" data-city="${l.city}" data-state="${l.state}">
-        ${l.city}<span class="suggestion-state">${l.state}</span>
-      </div>`
-    ).join('');
-    elements.suggestions.classList.add('show');
-  }
+    cities = cities.sort((a, b) => a.sortOrder - b.sortOrder);
 
-  function onLocationBlur() {
-    setTimeout(() => elements.suggestions.classList.remove('show'), 200);
-  }
-
-  function onLocationKeydown(e) {
-    const items = elements.suggestions.querySelectorAll('.suggestion-item');
-    if (!elements.suggestions.classList.contains('show') || items.length === 0) return;
-    if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      activeIdx = Math.min(activeIdx + 1, items.length - 1);
-      updateActive(items);
-    } else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      activeIdx = Math.max(activeIdx - 1, 0);
-      updateActive(items);
-    } else if (e.key === 'Enter' || e.key === 'Tab') {
-      if (activeIdx >= 0 && items[activeIdx]) {
-        e.preventDefault();
-        selectLocation(items[activeIdx]);
-      }
-    } else if (e.key === 'Escape') {
-      elements.suggestions.classList.remove('show');
-    }
-  }
-
-  function updateActive(items) {
-    items.forEach((item, i) => item.classList.toggle('active', i === activeIdx));
-    if (items[activeIdx]) items[activeIdx].scrollIntoView({ block: 'nearest' });
-  }
-
-  function onDocClick(e) {
-    if (!e.target.closest('.autocomplete-wrap')) {
-      elements.suggestions.classList.remove('show');
-    }
+    let html = '<option value="">Select a city...</option>';
+    cities.forEach(l => {
+      html += `<option value="${l.city}" data-lat="${l.latitude}" data-lng="${l.longitude}" data-state="${l.state}">${l.city}${!state ? ', ' + l.state : ''}</option>`;
+    });
+    elements.cityInput.innerHTML = html;
   }
 
   function onStateChange() {
-    const state = elements.stateInput.value;
-    if (state) {
-      const match = allLocations.filter(l => l.state === state);
-      if (match.length > 0) {
-        elements.locationInput.value = '';
-        const city = match.find(l => l.sortOrder === Math.min(...match.map(x => x.sortOrder))) || match[0];
-        elements.locationInput.placeholder = city.city;
-        elements.latInput.value = city.latitude;
-        elements.lngInput.value = city.longitude;
-      }
+    populateCities();
+  }
+
+  function onCityChange() {
+    const opt = elements.cityInput.options[elements.cityInput.selectedIndex];
+    if (opt && opt.value) {
+      elements.latInput.value = opt.dataset.lat;
+      elements.lngInput.value = opt.dataset.lng;
     }
-    onLocationInput();
   }
-
-  function selectLocation(el) {
-    elements.locationInput.value = el.dataset.city;
-    elements.latInput.value = el.dataset.lat;
-    elements.lngInput.value = el.dataset.lng;
-    elements.stateInput.value = el.dataset.state;
-    elements.suggestions.classList.remove('show');
-  }
-
-  elements.suggestions.addEventListener('click', e => {
-    const item = e.target.closest('.suggestion-item');
-    if (item) selectLocation(item);
-  });
 
   async function onSearch(e) {
     e.preventDefault();
