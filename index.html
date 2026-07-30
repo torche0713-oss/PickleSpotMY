@@ -33,11 +33,20 @@
       <div class="container">
         <form id="search-form" class="search-form">
           <div class="search-row">
-            <div class="field">
+            <div class="field loc-field">
               <label>Location</label>
-              <input type="text" id="location-input" placeholder="Kuala Lumpur" value="Kuala Lumpur" />
-              <input type="hidden" id="lat-input" value="3.139" />
-              <input type="hidden" id="lng-input" value="101.686" />
+              <div class="autocomplete-wrap">
+                <input type="text" id="location-input" placeholder="Type a city..." value="Kuala Lumpur" autocomplete="off" />
+                <input type="hidden" id="lat-input" value="3.139" />
+                <input type="hidden" id="lng-input" value="101.686" />
+                <div id="location-suggestions" class="suggestions-dropdown"></div>
+              </div>
+            </div>
+            <div class="field">
+              <label>State</label>
+              <select id="state-input">
+                <option value="">All States</option>
+              </select>
             </div>
             <div class="field">
               <label>Date</label>
