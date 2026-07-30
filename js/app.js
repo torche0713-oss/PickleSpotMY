@@ -161,6 +161,20 @@
         <div class="venue-courts" id="courts-${v.id}">
           <div style="padding:16px;text-align:center;color:var(--gray-500);font-size:0.85rem;">Loading availability...</div>
         </div>
+        <div class="venue-gear">
+          <div class="gear-toggle" onclick="event.stopPropagation();this.closest('.venue-gear').classList.toggle('open')">
+            <span>🏸 Pickleball Gear</span>
+            <span class="gear-arrow">▸</span>
+          </div>
+          <div class="gear-content">
+            <a href="https://shopee.com.my/search?keyword=pickleball+paddle" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Paddles</a>
+            <a href="https://shopee.com.my/search?keyword=pickleball+balls+outdoor" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Balls</a>
+            <a href="https://shopee.com.my/search?keyword=portable+pickleball+net" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Nets</a>
+            <a href="https://shopee.com.my/search?keyword=pickleball+shoes+court" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Shoes</a>
+            <a href="https://shopee.com.my/search?keyword=pickleball+bag" target="_blank" rel="noopener" class="gear-link" onclick="event.stopPropagation()">Bags</a>
+            <span class="gear-disclaimer">We may earn a commission from purchases.</span>
+          </div>
+        </div>
       </div>
     `).join('');
   }

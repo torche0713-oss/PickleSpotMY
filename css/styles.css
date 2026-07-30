@@ -82,6 +82,17 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
 .session-price { color: var(--gray-700); font-size: 0.85rem; }
 .session-book { padding: 6px 14px; background: var(--green); color: white; text-decoration: none; border-radius: var(--radius); font-size: 0.8rem; font-weight: 500; }
 
+.venue-gear { border-top: 1px solid var(--gray-100); }
+.gear-toggle { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; cursor: pointer; font-size: 0.8rem; color: var(--gray-500); user-select: none; }
+.gear-toggle:hover { color: var(--green); }
+.gear-arrow { font-size: 0.7rem; transition: transform .2s; }
+.venue-gear.open .gear-arrow { transform: rotate(90deg); }
+.gear-content { display: none; gap: 8px; padding: 0 20px 12px; flex-wrap: wrap; }
+.venue-gear.open .gear-content { display: flex; }
+.gear-link { padding: 6px 14px; background: var(--gray-100); color: var(--gray-700); text-decoration: none; border-radius: 100px; font-size: 0.75rem; font-weight: 500; }
+.gear-link:hover { background: var(--green-light); color: var(--green-dark); }
+.gear-disclaimer { width: 100%; font-size: 0.65rem; color: var(--gray-300); margin-top: 4px; }
+
 .loading-state { text-align: center; padding: 48px; color: var(--gray-500); }
 .spinner { width: 40px; height: 40px; border: 4px solid var(--gray-200); border-top-color: var(--green); border-radius: 50%; animation: spin .8s linear infinite; margin: 0 auto 16px; }
 @keyframes spin { to { transform: rotate(360deg); } }
@@ -129,6 +140,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-
   .venue-header .venue-meta { font-size: .75rem; }
   .venue-status-badge { font-size: .7rem; padding: 3px 8px; }
   .venue-group.expanded .venue-courts { padding: 8px 14px; }
+  .gear-toggle { padding: 8px 14px; font-size: .75rem; }
+  .gear-content { padding: 0 14px 10px; }
+  .gear-link { font-size: .7rem; padding: 5px 12px; }
 
   .session-card { flex-direction: column; align-items: flex-start; gap: 6px; padding: 10px 0; }
   .session-time { font-size: .85rem; }
