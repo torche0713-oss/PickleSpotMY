@@ -1733,6 +1733,17 @@ a:hover { color: var(--primary-light); }
   border: 1px solid rgba(37, 99, 235, 0.2);
 }
 
+.gear-card-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 14px;
+  padding: 8px;
+}
+
 .gear-card-title {
   font-size: 16px;
   font-weight: 700;
