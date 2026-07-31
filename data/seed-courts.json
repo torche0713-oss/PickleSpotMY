@@ -689,34 +689,6 @@
     "status": "active"
   },
   {
-    "id": "gotta-bounce-sports-and-social-club",
-    "name": "Gotta' Bounce Sports & Social Club",
-    "slug": "gotta-bounce-sports-and-social-club",
-    "description": "Premier Pickleball facility in Johor Bahru, Johor.",
-    "category": "indoor",
-    "location": {
-      "address": "Johor Bahru, Johor",
-      "city": "Johor Bahru",
-      "state": "Johor",
-      "lat": 1.4912,
-      "lng": 103.7435
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/0Ut8ja1n8hFCvWiNX8sp",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/0Ut8ja1n8hFCvWiNX8sp",
-    "status": "active"
-  },
-  {
     "id": "havona-badminton-sports-centre",
     "name": "Havona Badminton Sports Centre",
     "slug": "havona-badminton-sports-centre",
@@ -826,34 +798,6 @@
     "price_range": "",
     "source": "picklepadel.my",
     "source_url": "https://picklepadel.my/en/venues/DBzSV1sP5xQ6JBHKV0pq",
-    "status": "active"
-  },
-  {
-    "id": "kicks-the-pickle-exchange",
-    "name": "KICKS - The Pickle Exchange",
-    "slug": "kicks-the-pickle-exchange",
-    "description": "Premier Pickleball facility in Johor Bahru, Johor.",
-    "category": "indoor",
-    "location": {
-      "address": "6A, Jalan Riang Utama, Taman Gembira",
-      "city": "Johor Bahru",
-      "state": "Johor",
-      "lat": 1.5123,
-      "lng": 103.7324
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/zojcqFIMivCzOEK4DQRh",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/zojcqFIMivCzOEK4DQRh",
     "status": "active"
   },
   {
@@ -990,34 +934,6 @@
     "price_range": "",
     "source": "picklepadel.my",
     "source_url": "https://picklepadel.my/en/venues/14lVm3tif9PldfvU00By",
-    "status": "active"
-  },
-  {
-    "id": "pickle-friends-lotuss-plentong",
-    "name": "Pickle Friends @ Lotuss Plentong",
-    "slug": "pickle-friends-lotuss-plentong",
-    "description": "Premier Pickleball facility in Masai, Johor.",
-    "category": "indoor",
-    "location": {
-      "address": "Masai, Johor",
-      "city": "Masai",
-      "state": "Johor",
-      "lat": 1.532,
-      "lng": 103.821
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/lujbzt97VtejjY3YKYkU",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/lujbzt97VtejjY3YKYkU",
     "status": "active"
   },
   {
@@ -1437,34 +1353,6 @@
     "price_range": "",
     "source": "picklepadel.my",
     "source_url": "https://picklepadel.my/en/venues/WEc3SPB0PEFvBLv7H0VH",
-    "status": "active"
-  },
-  {
-    "id": "alor-setar-pickleball",
-    "name": "Alor Setar Pickleball",
-    "slug": "alor-setar-pickleball",
-    "description": "Premier Pickleball facility in Alor Setar, Kedah.",
-    "category": "indoor",
-    "location": {
-      "address": "Alor Setar, Kedah",
-      "city": "Alor Setar",
-      "state": "Kedah",
-      "lat": 6.1333,
-      "lng": 100.3667
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/ixvg6GZL8gCjLrMWFtzO",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/ixvg6GZL8gCjLrMWFtzO",
     "status": "active"
   },
   {
@@ -1975,33 +1863,6 @@
     "status": "active"
   },
   {
-    "id": "embassy-villa-pickleball-by-cobnb-kl",
-    "name": "Embassy Villa Pickleball By Cobnb (KL)",
-    "slug": "embassy-villa-pickleball-by-cobnb-kl",
-    "description": "Premier Pickleball facility in Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.",
-    "category": "indoor",
-    "location": {
-      "address": "Embassy Villa By Cobnb, Persiaran Ampang Hilir, Taman U Thant, Kuala Lumpur, Federal Territory of Kuala Lumpur",
-      "city": "Kuala Lumpur",
-      "state": "Kuala Lumpur",
-      "lat": 3.1585,
-      "lng": 101.7335
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/jmeSAypmbSWql3eCDMon",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Restroom"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/jmeSAypmbSWql3eCDMon",
-    "status": "active"
-  },
-  {
     "id": "first-pick-pickleball",
     "name": "First Pick Pickleball",
     "slug": "first-pick-pickleball",
@@ -2219,34 +2080,6 @@
     "price_range": "",
     "source": "picklepadel.my",
     "source_url": "https://picklepadel.my/en/venues/3kbQ0YuFgwdqljio8xcz",
-    "status": "active"
-  },
-  {
-    "id": "lavana-3-pickleball-centre-kepong",
-    "name": "Lavana 3 Pickleball Centre @ Kepong",
-    "slug": "lavana-3-pickleball-centre-kepong",
-    "description": "Premier Pickleball facility in Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.",
-    "category": "indoor",
-    "location": {
-      "address": "686, Jalan Kuang Bertam, Taman Kepong, Kuala Lumpur, Federal Territory of Kuala Lumpur, Malaysia",
-      "city": "Kuala Lumpur",
-      "state": "Kuala Lumpur",
-      "lat": 3.1433346576576002,
-      "lng": 101.71834286126204
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/EzBaEaFia0hJtmITSuUG",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/EzBaEaFia0hJtmITSuUG",
     "status": "active"
   },
   {
@@ -3050,34 +2883,6 @@
     "status": "active"
   },
   {
-    "id": "setapak-pickleball",
-    "name": "Setapak Pickleball",
-    "slug": "setapak-pickleball",
-    "description": "Premier Pickleball facility in Kuala Lumpur, Kuala Lumpur.",
-    "category": "indoor",
-    "location": {
-      "address": "Kuala Lumpur, Kuala Lumpur",
-      "city": "Kuala Lumpur",
-      "state": "Kuala Lumpur",
-      "lat": 3.216,
-      "lng": 101.725
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/et1v9ioYYkSecTwEuSRz",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/et1v9ioYYkSecTwEuSRz",
-    "status": "active"
-  },
-  {
     "id": "sjk-c-st-teresa",
     "name": "SJK(C) St.Teresa",
     "slug": "sjk-c-st-teresa",
@@ -3134,34 +2939,6 @@
     ],
     "source": "courtos.momentist.com.my",
     "source_url": "https://courtos.momentist.com.my/",
-    "status": "active"
-  },
-  {
-    "id": "spin-city",
-    "name": "Spin City",
-    "slug": "spin-city",
-    "description": "Premier Pickleball facility in Kuala Lumpur, Kuala Lumpur.",
-    "category": "indoor",
-    "location": {
-      "address": "Great Eastern Mall, Jalan Ampang",
-      "city": "Kuala Lumpur",
-      "state": "Kuala Lumpur",
-      "lat": 3.1592,
-      "lng": 101.7371
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/BGnaQyopGfvTBBjjVwcX",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/BGnaQyopGfvTBBjjVwcX",
     "status": "active"
   },
   {
@@ -4621,34 +4398,6 @@
     "status": "active"
   },
   {
-    "id": "mew-pickleball-leong-see-kah",
-    "name": "MEW Pickleball @ Leong See Kah",
-    "slug": "mew-pickleball-leong-see-kah",
-    "description": "Premier Pickleball facility in George Town, Penang.",
-    "category": "indoor",
-    "location": {
-      "address": "George Town, Penang",
-      "city": "George Town",
-      "state": "Penang",
-      "lat": 5.4168,
-      "lng": 100.3171
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/2RCEVEgU3TTIClWtF6dt",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/2RCEVEgU3TTIClWtF6dt",
-    "status": "active"
-  },
-  {
     "id": "nibong-tebal-arena",
     "name": "Nibong Tebal Arena",
     "slug": "nibong-tebal-arena",
@@ -4974,35 +4723,6 @@
     "price_range": "",
     "source": "picklepadel.my",
     "source_url": "https://picklepadel.my/en/venues/llFcHyu2SyQq6gsfIzUO",
-    "status": "active"
-  },
-  {
-    "id": "ac-centre-court-ac-hotel-by-marriott",
-    "name": "AC Centre Court @ AC Hotel by Marriott",
-    "slug": "ac-centre-court-ac-hotel-by-marriott",
-    "description": "Premier Pickleball facility in Ipoh, Perak.",
-    "category": "indoor",
-    "location": {
-      "address": "88, Jalan Sultan Abdul Jalil, 31350 Ipoh, Perak, Malaysia",
-      "city": "Ipoh",
-      "state": "Perak",
-      "lat": 4.5975,
-      "lng": 101.0884
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/Pe57fvHjs0Lxj3YpyM2Z",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Pro Shop",
-      "Restroom",
-      "Food"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/Pe57fvHjs0Lxj3YpyM2Z",
     "status": "active"
   },
   {
@@ -6381,34 +6101,6 @@
     "status": "active"
   },
   {
-    "id": "all-star-pickle-st",
-    "name": "All-Star Pickle ST",
-    "slug": "all-star-pickle-st",
-    "description": "Premier Pickleball facility in Klang, Selangor.",
-    "category": "indoor",
-    "location": {
-      "address": "Klang, Selangor",
-      "city": "Klang",
-      "state": "Selangor",
-      "lat": 3.0517048376411346,
-      "lng": 101.53658297165885
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/rQPUHkex9zybNKP7kr5x",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/rQPUHkex9zybNKP7kr5x",
-    "status": "active"
-  },
-  {
     "id": "ancubic-pickleclub",
     "name": "ANCUBIC PICKLECLUB",
     "slug": "ancubic-pickleclub",
@@ -7687,33 +7379,6 @@
     "status": "active"
   },
   {
-    "id": "jompickle-sports-club",
-    "name": "Jompickle Sports Club",
-    "slug": "jompickle-sports-club",
-    "description": "Premier Pickleball facility in Petaling Jaya, Selangor.",
-    "category": "indoor",
-    "location": {
-      "address": "JomPickle Sports Club, Icon City, 47300 Petaling Jaya, Selangor, Malaysia",
-      "city": "Petaling Jaya",
-      "state": "Selangor",
-      "lat": 3.0867,
-      "lng": 101.6117
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/fHtPMfAYhK6DgFXFBO6W",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Restroom"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/fHtPMfAYhK6DgFXFBO6W",
-    "status": "active"
-  },
-  {
     "id": "jomplay-arena",
     "name": "JOMPLAY ARENA",
     "slug": "jomplay-arena",
@@ -8517,34 +8182,6 @@
     "status": "active"
   },
   {
-    "id": "pickle-haven",
-    "name": "Pickle Haven",
-    "slug": "pickle-haven",
-    "description": "Premier Pickleball facility in Subang Jaya, Selangor.",
-    "category": "indoor",
-    "location": {
-      "address": "763, Jalan Subang 4, Ultramine Industrial Park",
-      "city": "Subang Jaya",
-      "state": "Selangor",
-      "lat": 3.0755,
-      "lng": 101.59
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/89Ery1wNyuo9G3KxPsE2",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/89Ery1wNyuo9G3KxPsE2",
-    "status": "active"
-  },
-  {
     "id": "pickle-hive",
     "name": "Pickle Hive",
     "slug": "pickle-hive",
@@ -8906,34 +8543,6 @@
     "price_range": "",
     "source": "picklepadel.my",
     "source_url": "https://picklepadel.my/en/venues/MeJwqOU4d8q38XW9qtCa",
-    "status": "active"
-  },
-  {
-    "id": "pickle-world-pj",
-    "name": "Pickle World @ PJ",
-    "slug": "pickle-world-pj",
-    "description": "Premier Pickleball facility in Petaling Jaya, Selangor.",
-    "category": "indoor",
-    "location": {
-      "address": "Petaling Jaya, Selangor",
-      "city": "Petaling Jaya",
-      "state": "Selangor",
-      "lat": 3.0859,
-      "lng": 101.6302
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/vKa3zYWN1jezskPFGTjh",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/vKa3zYWN1jezskPFGTjh",
     "status": "active"
   },
   {
@@ -9545,34 +9154,6 @@
     "status": "active"
   },
   {
-    "id": "premier-pickleball",
-    "name": "Premier Pickleball",
-    "slug": "premier-pickleball",
-    "description": "Premier Pickleball facility in Petaling Jaya, Selangor.",
-    "category": "indoor",
-    "location": {
-      "address": "Lot 80133, Jalan Taman Setiawangsa, 54200 KL",
-      "city": "Petaling Jaya",
-      "state": "Selangor",
-      "lat": 3.178,
-      "lng": 101.748
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/i7Qn09GFHzd2Z8G5IoLu",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/i7Qn09GFHzd2Z8G5IoLu",
-    "status": "active"
-  },
-  {
     "id": "racket-reserved-club-rrc",
     "name": "Racket Reserved Club (RRC)",
     "slug": "racket-reserved-club-rrc",
@@ -9627,34 +9208,6 @@
     "price_range": "",
     "source": "picklepadel.my",
     "source_url": "https://picklepadel.my/en/venues/SUcZUJ321Pl85UaGqPVa",
-    "status": "active"
-  },
-  {
-    "id": "rcp-racquet-club-puchong",
-    "name": "RCP Racquet Club Puchong",
-    "slug": "rcp-racquet-club-puchong",
-    "description": "Premier Pickleball facility in Puchong, Selangor.",
-    "category": "indoor",
-    "location": {
-      "address": "1295, Jalan Pipit, Kg Bukit Tandang",
-      "city": "Puchong",
-      "state": "Selangor",
-      "lat": 3.0475,
-      "lng": 101.6212
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/Bs4QdCPx1ZeJNJj4k8DK",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Toilets",
-      "Water"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/Bs4QdCPx1ZeJNJj4k8DK",
     "status": "active"
   },
   {
@@ -10693,33 +10246,6 @@
     "status": "active"
   },
   {
-    "id": "white-fairy-badminton-and-pickleball-court",
-    "name": "White Fairy Badminton & Pickleball Court",
-    "slug": "white-fairy-badminton-and-pickleball-court",
-    "description": "Premier Pickleball facility in North Puchong, Selangor.",
-    "category": "indoor",
-    "location": {
-      "address": "White Fairy Futsal & Badminton Court, Jalan Taman Kinrara, Taman Kinrara, Puchong, Selangor, Malaysia",
-      "city": "North Puchong",
-      "state": "Selangor",
-      "lat": 3.0598,
-      "lng": 101.6352
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/SvIH3tNnhsCxvkZQqDO3",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Restroom"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/SvIH3tNnhsCxvkZQqDO3",
-    "status": "active"
-  },
-  {
     "id": "white-pickleball-sports-centre",
     "name": "White Pickleball Sports Centre",
     "slug": "white-pickleball-sports-centre",
@@ -10745,33 +10271,6 @@
     "price_range": "",
     "source": "picklepadel.my",
     "source_url": "https://picklepadel.my/en/venues/5Qd8YWtCkJ16pTYcnRIE",
-    "status": "active"
-  },
-  {
-    "id": "x-park-pickleball-sunway-south-quay",
-    "name": "X Park Pickleball Sunway South Quay",
-    "slug": "x-park-pickleball-sunway-south-quay",
-    "description": "Premier Pickleball facility in Subang Jaya, Selangor.",
-    "category": "indoor",
-    "location": {
-      "address": "X Park Pickleball Sunway South Quay, Jalan Tasik Selatan, Subang Jaya, Selangor",
-      "city": "Subang Jaya",
-      "state": "Selangor",
-      "lat": 3.0606,
-      "lng": 101.605
-    },
-    "contact": {
-      "website": "https://picklepadel.my/en/venues/amHAus6qWsMiAKYakioQ",
-      "phone": ""
-    },
-    "amenities": [
-      "Parking",
-      "Restroom"
-    ],
-    "courts": 2,
-    "price_range": "",
-    "source": "picklepadel.my",
-    "source_url": "https://picklepadel.my/en/venues/amHAus6qWsMiAKYakioQ",
     "status": "active"
   },
   {
