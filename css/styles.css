@@ -221,7 +221,7 @@ a:hover { color: var(--primary-light); }
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(0, 0, 0, 0.45);
 }
 .hero-content {
   max-width: 700px;
@@ -237,11 +237,11 @@ a:hover { color: var(--primary-light); }
   margin-bottom: 20px;
 }
 .hero-logo-wrap .hero-logo {
-  background: rgba(0,0,0,0.03);
+  background: rgba(255,255,255,0.12);
   backdrop-filter: blur(10px);
   padding: 12px 30px;
   border-radius: 16px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255,255,255,0.35);
   font-size: 42px;
   line-height: 1;
   display: block;
@@ -249,8 +249,8 @@ a:hover { color: var(--primary-light); }
 }
 .hero-badge {
   display: inline-block;
-  background: rgba(37,99,235,0.12);
-  color: var(--primary);
+  background: rgba(255,255,255,0.14);
+  color: #ffffff;
   padding: 4px 16px;
   border-radius: 20px;
   font-size: 12px;
@@ -258,19 +258,20 @@ a:hover { color: var(--primary-light); }
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  border: 1px solid rgba(37,99,235,0.2);
+  border: 1px solid rgba(255,255,255,0.35);
 }
 .hero h1 {
   font-size: 38px;
   font-weight: 800;
-  color: #1e293b;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.55);
   line-height: 1.2;
   margin-bottom: 14px;
   letter-spacing: -1px;
 }
 
 .hero h1 .gradient-text {
-  background: linear-gradient(135deg, #2563eb, #6366f1, #2563eb);
+  background: linear-gradient(135deg, #93c5fd, #c7d2fe, #93c5fd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -281,21 +282,21 @@ a:hover { color: var(--primary-light); }
 }
 .hero-sub-badge {
   display: inline-block;
-  background: rgba(37,99,235,0.08);
-  color: var(--primary);
+  background: rgba(255,255,255,0.14);
+  color: #ffffff;
   padding: 6px 18px;
   border-radius: 20px;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.3px;
   margin-bottom: 14px;
-  border: 1px solid rgba(37,99,235,0.2);
+  border: 1px solid rgba(255,255,255,0.35);
   animation: pulseSubBadge 2.5s ease-in-out infinite;
 }
 .hero-sub {
   font-size: 16px;
   color: #ffffff;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
   line-height: 1.6;
   margin-bottom: 28px;
   max-width: 560px;
@@ -316,14 +317,14 @@ a:hover { color: var(--primary-light); }
   display: block;
   font-size: 26px;
   font-weight: 800;
-  color: var(--primary);
+  color: #ffffff;
 }
 .hero-stat-label {
   font-size: 12px;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 .hero-actions {
   display: flex;
@@ -366,8 +367,8 @@ a:hover { color: var(--primary-light); }
 }
 
 .hero-launch-notice {
-  background: rgba(243,156,18,0.08);
-  border: 1px solid rgba(243,156,18,0.2);
+  background: rgba(243,156,18,0.14);
+  border: 1px solid rgba(243,156,18,0.5);
   border-radius: 12px;
   padding: 12px 18px;
   margin: 0 auto 24px;
@@ -377,7 +378,7 @@ a:hover { color: var(--primary-light); }
   gap: 10px;
   font-size: 13px;
   color: #ffffff;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
   line-height: 1.6;
   text-align: left;
 }
