@@ -199,6 +199,30 @@ a:hover { color: var(--primary-light); }
   transform: rotate(-20deg);
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 100'%3E%3Crect x='32' y='62' width='16' height='28' rx='3' fill='%232563eb'/%3E%3Cellipse cx='40' cy='38' rx='26' ry='32' fill='%232563eb'/%3E%3Ccircle cx='40' cy='38' r='18' fill='none' stroke='%232563eb' stroke-width='1' opacity='0.4'/%3E%3Ccircle cx='40' cy='38' r='12' fill='none' stroke='%232563eb' stroke-width='1' opacity='0.4'/%3E%3C/svg%3E") center/contain no-repeat;
 }
+.hero-slides,
+.hero-slide {
+  position: absolute;
+  inset: 0;
+}
+.hero-slides {
+  z-index: 0;
+}
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.6s ease-in-out;
+  will-change: opacity;
+}
+.hero-slide.active {
+  opacity: 1;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: rgba(255, 255, 255, 0.72);
+}
 .hero-content {
   max-width: 700px;
   margin: 0 auto;
