@@ -221,7 +221,7 @@ a:hover { color: var(--primary-light); }
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: rgba(255, 255, 255, 0.40);
+  background: rgba(255, 255, 255, 0.30);
 }
 .hero-content {
   max-width: 700px;
@@ -484,7 +484,7 @@ a:hover { color: var(--primary-light); }
 
 .search-box input:focus {
   border-color: var(--primary);
-  background: rgba(37,99,235,0.06);
+  background: rgba(37,99,235,0.16);
   box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
 }
 
@@ -630,7 +630,7 @@ a:hover { color: var(--primary-light); }
 }
 
 .sidebar-court-item:hover {
-  background: rgba(37,99,235,0.06);
+  background: rgba(37,99,235,0.16);
 }
 
 .sidebar-court-item.active {
@@ -906,7 +906,7 @@ a:hover { color: var(--primary-light); }
 
 .list-search input:focus {
   border-color: var(--primary);
-  background: rgba(37,99,235,0.06);
+  background: rgba(37,99,235,0.16);
   box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
 }
 
@@ -1426,7 +1426,7 @@ a:hover { color: var(--primary-light); }
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--primary);
-  background: rgba(37,99,235,0.06);
+  background: rgba(37,99,235,0.16);
   box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
 }
 
